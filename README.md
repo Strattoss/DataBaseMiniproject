@@ -1,8 +1,8 @@
 # DataBaseMiniproject
 ## Nazwiska
-Gracjan Filipek: gfilipek@student.agh.edu.pl
-Marek Żuwała
-Norbert Żmija: norbertzmija@student.agh.edu.pl
+* Gracjan Filipek: gfilipek@student.agh.edu.pl
+* Marek Żuwała
+* Norbert Żmija: norbertzmija@student.agh.edu.pl
 
 ## Temat
 Projekt polega na stworzeniu bazy danych dla biura podróży w oparciu o technologie MongoDB.
