@@ -1,7 +1,7 @@
 # DataBaseMiniproject
 ## Nazwiska
 * Gracjan Filipek: gfilipek@student.agh.edu.pl
-* Marek Żuwała
+* Marek Żuwała: marekzuwala@student.agh.edu.pl
 * Norbert Żmija: norbertzmija@student.agh.edu.pl
 
 ## Temat
