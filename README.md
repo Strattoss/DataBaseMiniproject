@@ -10,5 +10,7 @@ W bazie danych będziemy trzymać informacje na temat wycieczek, użytkowników 
 Umożliwimy też ocene i skomentowanie wycieczek.
 
 ## Technlogie
-MongoDB
-Angular
+* MongoDB
+* Angular
+* TypeScript
+
