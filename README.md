@@ -11,6 +11,6 @@ Umożliwimy też ocene i skomentowanie wycieczek.
 
 ## Technlogie
 * MongoDB
+* Node.js
+* Express.js
 * Angular
-* TypeScript
-
