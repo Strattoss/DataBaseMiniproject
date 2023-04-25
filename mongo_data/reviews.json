@@ -1,0 +1,106 @@
+[
+    {
+        "comment": "Very pleasant trip, would go again!",
+        "rating": 4,
+        "reviewDate": {
+            "$date": "2023-01-24"
+        },
+        "tripId": {
+            "$oid": "6447af70d297195ac0dd242b"
+        },
+        "customerId": {
+            "$oid": "6447a9ead297195ac0dd240e"
+        }
+    },
+    {
+        "comment": "Amazing experience, loved every minute of it!",
+        "rating": 5,
+        "reviewDate": {
+            "$date": "2023-04-13"
+        },
+        "tripId": {
+            "$oid": "6447af70d297195ac0dd242c"
+        },
+        "customerId": {
+            "$oid": "6447a9ead297195ac0dd2408"
+        }
+    },
+    {
+        "comment": "Not what I expected, quite disappointing",
+        "rating": 2,
+        "reviewDate": {
+            "$date": "2023-03-17"
+        },
+        "tripId": {
+            "$oid": "6447af70d297195ac0dd242c"
+        },
+        "customerId": {
+            "$oid": "6447a9ead297195ac0dd2409"
+        }
+    },
+    {
+        "comment": "The tour guide was amazing, very knowledgeable and friendly",
+        "rating": 4,
+        "reviewDate": {
+            "$date": "2023-02-08"
+        },
+        "tripId": {
+            "$oid": "6447af70d297195ac0dd242e"
+        },
+        "customerId": {
+            "$oid": "6447a9ead297195ac0dd240a"
+        }
+    },
+    {
+        "comment": "Absolutely terrible, would not recommend",
+        "rating": 1,
+        "reviewDate": {
+            "$date": "2023-01-30"
+        },
+        "tripId": {
+            "$oid": "6447af70d297195ac0dd242f"
+        },
+        "customerId": {
+            "$oid": "6447a9ead297195ac0dd240c"
+        }
+    },
+    {
+        "comment": "A great way to explore the city, highly recommend",
+        "rating": 5,
+        "reviewDate": {
+            "$date": "2023-04-20"
+        },
+        "tripId": {
+            "$oid": "6447af70d297195ac0dd242e"
+        },
+        "customerId": {
+            "$oid": "6447a9ead297195ac0dd240d"
+        }
+    },
+    {
+        "comment": "Nice trip, but not worth the price",
+        "rating": 3,
+        "reviewDate": {
+            "$date": "2023-03-10"
+        },
+        "tripId": {
+            "$oid": "6447af70d297195ac0dd2430"
+        },
+        "customerId": {
+            "$oid": "6447a9ead297195ac0dd240d"
+        }
+    },
+    {
+        "comment": "Had a great time, would recommend to anyone!",
+        "rating": 5,
+        "reviewDate": {
+            "$date": "2023-02-16"
+        },
+        "tripId": {
+            "$oid": "6447af70d297195ac0dd2432"
+        },
+        "customerId": {
+            "$oid": "6447a9ead297195ac0dd2411"
+        }
+    }
+]

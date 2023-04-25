@@ -1,0 +1,404 @@
+[
+  {
+    "_id": {
+      "$oid": "6447af70d297195ac0dd242c"
+    },
+    "description": "Discover the heart of Europe with a trip to Belgium, a small but diverse country with a rich history and culture. Explore the Gothic architecture of Brussels, the medieval town of Bruges, and the picturesque countryside dotted with castles and windmills. Indulge in the country's famous chocolate, waffles, and beer, and experience the warm hospitality of the Belgian people.",
+    "destination": "Belgium",
+    "endDate": {
+      "$date": "2023-02-11T00:00:00.000Z"
+    },
+    "availableSeats": 8,
+    "imgs": [
+      {
+        "alt": "Grote Markt (9379072012)",
+        "srcFull": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Grote_Markt_%289379072012%29.jpg/1024px-Grote_Markt_%289379072012%29.jpg",
+        "srcThumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Grote_Markt_%289379072012%29.jpg/256px-Grote_Markt_%289379072012%29.jpg",
+        "title": "Francisco Anzola, CC BY 2.0 &lt;https://creativecommons.org/licenses/by/2.0&gt;, via Wikimedia Commons"
+      },
+      {
+        "alt": "Belgique - Bruxelles - Grand-Place - Côté nord-est",
+        "srcFull": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Belgique_-_Bruxelles_-_Grand-Place_-_C%C3%B4t%C3%A9_nord-est.jpg/1024px-Belgique_-_Bruxelles_-_Grand-Place_-_C%C3%B4t%C3%A9_nord-est.jpg",
+        "srcThumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Belgique_-_Bruxelles_-_Grand-Place_-_C%C3%B4t%C3%A9_nord-est.jpg/256px-Belgique_-_Bruxelles_-_Grand-Place_-_C%C3%B4t%C3%A9_nord-est.jpg",
+        "title": "EmDee, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons"
+      },
+      {
+        "alt": "Onze-Lieve-Vrouwekathedraal Antwerpen",
+        "srcFull": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Onze-Lieve-Vrouwekathedraal_Antwerpen.jpg/1024px-Onze-Lieve-Vrouwekathedraal_Antwerpen.jpg",
+        "srcThumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Onze-Lieve-Vrouwekathedraal_Antwerpen.jpg/256px-Onze-Lieve-Vrouwekathedraal_Antwerpen.jpg",
+        "title": "FaceMePLS from The Hague, The Netherlands, CC BY 2.0 &lt;https://creativecommons.org/licenses/by/2.0&gt;, via Wikimedia Commons"
+      }
+    ],
+    "title": "Heart of Europe",
+    "startDate": {
+      "$date": "2023-02-08T00:00:00.000Z"
+    },
+    "unitPrice": 769.99
+  },
+  {
+    "_id": {
+      "$oid": "6447af70d297195ac0dd242d"
+    },
+    "description": "Germany is a country with a rich and fascinating history that has inspired countless tales and legends. Follow in the footsteps of the Brothers Grimm and discover the fairy-tale landscapes of Germany, from the enchanting Black Forest to the stunning Bavarian Alps. Explore the historic cities of Berlin, Munich, and Dresden, and experience the country's modern, innovative spirit.",
+    "destination": "Germany",
+    "endDate": {
+      "$date": "2024-01-11T00:00:00.000Z"
+    },
+    "availableSeats": 96,
+    "imgs": [
+      {
+        "alt": "Bonn LangerEugen Posttower",
+        "srcFull": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Bonn_LangerEugen_Posttower.jpg/1024px-Bonn_LangerEugen_Posttower.jpg",
+        "srcThumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Bonn_LangerEugen_Posttower.jpg/256px-Bonn_LangerEugen_Posttower.jpg",
+        "title": "Qualle, CC BY-SA 3.0 &lt;http://creativecommons.org/licenses/by-sa/3.0/&gt;, via Wikimedia Commons"
+      }
+    ],
+    "title": "Never Ending Story",
+    "startDate": {
+      "$date": "2023-02-01T00:00:00.000Z"
+    },
+    "unitPrice": 399.99
+  },
+  {
+    "_id": {
+      "$oid": "6447af70d297195ac0dd242e"
+    },
+    "description": "The Czech Republic is a country with a rich and fascinating history, and a visit here is like taking a peek into the past. From the cobbled streets and colorful buildings of Prague's Old Town to the Gothic castles and ancient ruins scattered throughout the countryside, the Czech Republic is a treasure trove of historic sights and experiences. Sample the country's famous beer and hearty cuisine, and soak up the friendly hospitality of the Czech people.",
+    "destination": "Czech Republic",
+    "endDate": {
+      "$date": "2023-06-28T00:00:00.000Z"
+    },
+    "availableSeats": 2,
+    "imgs": [
+      {
+        "alt": "Prague (6365119737)",
+        "srcFull": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Prague_%286365119737%29.jpg/1024px-Prague_%286365119737%29.jpg",
+        "srcThumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Prague_%286365119737%29.jpg/256px-Prague_%286365119737%29.jpg",
+        "title": "Moyan Brenn from Italy, CC BY 2.0 &lt;https://creativecommons.org/licenses/by/2.0&gt;, via Wikimedia Commons"
+      },
+      {
+        "alt": "Petřín Tower View IMG 3020",
+        "srcFull": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Pet%C5%99%C3%ADn_Tower_View_IMG_3020.JPG/1024px-Pet%C5%99%C3%ADn_Tower_View_IMG_3020.JPG",
+        "srcThumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Pet%C5%99%C3%ADn_Tower_View_IMG_3020.JPG/256px-Pet%C5%99%C3%ADn_Tower_View_IMG_3020.JPG",
+        "title": "Deror_avi, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons"
+      },
+      {
+        "alt": "Vltava river in Prague",
+        "srcFull": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Vltava_river_in_Prague.jpg/1024px-Vltava_river_in_Prague.jpg",
+        "srcThumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Vltava_river_in_Prague.jpg/256px-Vltava_river_in_Prague.jpg",
+        "title": "Dmitry A. Mottl, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons"
+      }
+    ],
+    "title": "Peek into the Past",
+    "startDate": {
+      "$date": "2023-06-25T00:00:00.000Z"
+    },
+    "unitPrice": 459.99
+  },
+  {
+    "_id": {
+      "$oid": "6447af70d297195ac0dd242f"
+    },
+    "description": "Poland is a country with a tumultuous history, but one that has risen from the ashes of war and communism to become a vibrant and dynamic nation. Discover the country's rich cultural heritage, from the Gothic cathedrals of Krakow to the bustling markets of Warsaw. Experience the warmth and resilience of the Polish people, and sample the delicious cuisine that reflects the country's diverse influences.",
+    "destination": "Poland",
+    "endDate": {
+      "$date": "2023-05-17T00:00:00.000Z"
+    },
+    "availableSeats": 10,
+    "imgs": [
+      {
+        "alt": "2017-05-27 Plac Zamkowy w Warszawie 1",
+        "srcFull": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/2017-05-27_Plac_Zamkowy_w_Warszawie_1.jpg/1024px-2017-05-27_Plac_Zamkowy_w_Warszawie_1.jpg",
+        "srcThumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/2017-05-27_Plac_Zamkowy_w_Warszawie_1.jpg/256px-2017-05-27_Plac_Zamkowy_w_Warszawie_1.jpg",
+        "title": "Maksym Kozlenko, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons"
+      },
+      {
+        "alt": "Warsaw 07-13 img29 View from Palace of Culture and Science",
+        "srcFull": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Warsaw_07-13_img29_View_from_Palace_of_Culture_and_Science.jpg/1024px-Warsaw_07-13_img29_View_from_Palace_of_Culture_and_Science.jpg",
+        "srcThumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Warsaw_07-13_img29_View_from_Palace_of_Culture_and_Science.jpg/256px-Warsaw_07-13_img29_View_from_Palace_of_Culture_and_Science.jpg",
+        "title": "A.Savin, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons"
+      }
+    ],
+    "title": "Phoenix from the Ashes",
+    "startDate": {
+      "$date": "2023-05-10T00:00:00.000Z"
+    },
+    "unitPrice": 609.99
+  },
+  {
+    "_id": {
+      "$oid": "6447af70d297195ac0dd2430"
+    },
+    "description": "Germany is known for its efficient transport systems, well-maintained cities, and peaceful streets, making it a great destination for those who appreciate law and order. Explore the modern cities of Frankfurt, Munich, and Stuttgart, and experience the country's cutting-edge technology and innovative spirit. Take a relaxing stroll through the scenic countryside, or enjoy a bike ride along one of Germany's many dedicated cycling routes.",
+    "destination": "Germany",
+    "endDate": {
+      "$date": "2023-08-14T00:00:00.000Z"
+    },
+    "availableSeats": 0,
+    "imgs": [
+      {
+        "alt": "Siegessaeule Aussicht 10-13 img4 Tiergarten",
+        "srcFull": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Siegessaeule_Aussicht_10-13_img4_Tiergarten.jpg/1024px-Siegessaeule_Aussicht_10-13_img4_Tiergarten.jpg",
+        "srcThumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Siegessaeule_Aussicht_10-13_img4_Tiergarten.jpg/256px-Siegessaeule_Aussicht_10-13_img4_Tiergarten.jpg",
+        "title": "A.Savin, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons"
+      },
+      {
+        "alt": "Aerial view of Berlin (32881394137)",
+        "srcFull": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Aerial_view_of_Berlin_%2832881394137%29.jpg/1024px-Aerial_view_of_Berlin_%2832881394137%29.jpg",
+        "srcThumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Aerial_view_of_Berlin_%2832881394137%29.jpg/256px-Aerial_view_of_Berlin_%2832881394137%29.jpg",
+        "title": "dronepicr, CC BY 2.0 &lt;https://creativecommons.org/licenses/by/2.0&gt;, via Wikimedia Commons"
+      }
+    ],
+    "title": "Law and Order",
+    "startDate": {
+      "$date": "2023-08-11T00:00:00.000Z"
+    },
+    "unitPrice": 929.99
+  },
+  {
+    "_id": {
+      "$oid": "6447af70d297195ac0dd2431"
+    },
+    "description": "Paris is known as the City of Light, and there's no better time to experience its charm and romance than at night. Stroll along the Seine River, taking in the illuminated landmarks and bustling cafes that line its banks. Visit the famous Moulin Rouge cabaret for a night of entertainment, or simply relax in a cozy bistro and indulge in some delicious French cuisine.",
+    "destination": "France",
+    "endDate": {
+      "$date": "2023-09-22T00:00:00.000Z"
+    },
+    "availableSeats": 2,
+    "imgs": [
+      {
+        "alt": "La Tour Eiffel vue de la Tour Saint-Jacques, Paris août 2014 (2)",
+        "srcFull": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/1024px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg",
+        "srcThumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/256px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg",
+        "title": "Yann Caradec from Paris, France, CC BY-SA 2.0 &lt;https://creativecommons.org/licenses/by-sa/2.0&gt;, via Wikimedia Commons"
+      },
+      {
+        "alt": "Eiffel Tower from the Tour Montparnasse, 1 May 2012 N2",
+        "srcFull": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Eiffel_Tower_from_the_Tour_Montparnasse%2C_1_May_2012_N2.jpg/1024px-Eiffel_Tower_from_the_Tour_Montparnasse%2C_1_May_2012_N2.jpg",
+        "srcThumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Eiffel_Tower_from_the_Tour_Montparnasse%2C_1_May_2012_N2.jpg/256px-Eiffel_Tower_from_the_Tour_Montparnasse%2C_1_May_2012_N2.jpg",
+        "title": "Getfunky, CC BY 2.0 &lt;https://creativecommons.org/licenses/by/2.0&gt;, via Wikimedia Commons"
+      }
+    ],
+    "title": "What a Lovely Night",
+    "startDate": {
+      "$date": "2023-09-20T00:00:00.000Z"
+    },
+    "unitPrice": 419.99
+  },
+  {
+    "_id": {
+      "$oid": "6447af70d297195ac0dd2432"
+    },
+    "description": "Budapest is a unique and vibrant city that straddles the Danube River, offering visitors the best of both worlds. On one side, the historic Buda Castle district is home to medieval architecture, ancient ruins, and stunning views of the city. On the other side, the Pest district is a modern metropolis with a thriving arts and culture scene, lively cafes and bars, and a bustling shopping district.",
+    "destination": "Hungary",
+    "endDate": {
+      "$date": "2023-11-01T00:00:00.000Z"
+    },
+    "availableSeats": 6,
+    "imgs": [
+      {
+        "alt": "Budapest, Hungary (explored) (14995308504)",
+        "srcFull": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Budapest%2C_Hungary_%28explored%29_%2814995308504%29.jpg/1024px-Budapest%2C_Hungary_%28explored%29_%2814995308504%29.jpg",
+        "srcThumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Budapest%2C_Hungary_%28explored%29_%2814995308504%29.jpg/256px-Budapest%2C_Hungary_%28explored%29_%2814995308504%29.jpg",
+        "title": "Thomas Depenbusch (Depi) from Cologne, Germany, CC BY 2.0 &lt;https://creativecommons.org/licenses/by/2.0&gt;, via Wikimedia Commons"
+      },
+      {
+        "alt": "Széchenyi Chain Bridge in Budapest at night",
+        "srcFull": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Sz%C3%A9chenyi_Chain_Bridge_in_Budapest_at_night.jpg/1024px-Sz%C3%A9chenyi_Chain_Bridge_in_Budapest_at_night.jpg",
+        "srcThumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Sz%C3%A9chenyi_Chain_Bridge_in_Budapest_at_night.jpg/256px-Sz%C3%A9chenyi_Chain_Bridge_in_Budapest_at_night.jpg",
+        "title": "Wilfredor, CC0, via Wikimedia Commons"
+      }
+    ],
+    "title": "Tale of Two Cities",
+    "startDate": {
+      "$date": "2023-10-30T00:00:00.000Z"
+    },
+    "unitPrice": 749.99
+  },
+  {
+    "_id": {
+      "$oid": "6447af70d297195ac0dd2433"
+    },
+    "description": "Istanbul is a city that has been desired by empires and civilizations throughout history, and it's easy to see why. The city's rich cultural heritage is on full display in its stunning mosques, palaces, and markets, while its bustling streets are alive with the energy of modern-day Turkey. Indulge in delicious Turkish cuisine, take a dip in a traditional Turkish bath, and experience the vibrant nightlife of this fascinating city.",
+    "destination": "Türkiye",
+    "endDate": {
+      "$date": "2023-07-15T00:00:00.000Z"
+    },
+    "availableSeats": 2,
+    "imgs": [
+      {
+        "alt": "Bosphorus Bridge (235499411)",
+        "srcFull": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Bosphorus_Bridge_%28235499411%29.jpeg/1024px-Bosphorus_Bridge_%28235499411%29.jpeg",
+        "srcThumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Bosphorus_Bridge_%28235499411%29.jpeg/256px-Bosphorus_Bridge_%28235499411%29.jpeg",
+        "title": "Alexxx Malev, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons"
+      },
+      {
+        "alt": "Levent business district in Istanbul at night",
+        "srcFull": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Levent_business_district_in_Istanbul_at_night.jpg/1024px-Levent_business_district_in_Istanbul_at_night.jpg",
+        "srcThumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Levent_business_district_in_Istanbul_at_night.jpg/256px-Levent_business_district_in_Istanbul_at_night.jpg",
+        "title": "Derrick Brutel, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons"
+      }
+    ],
+    "title": "City of World's Desire",
+    "startDate": {
+      "$date": "2023-07-01T00:00:00.000Z"
+    },
+    "unitPrice": 1399.99
+  },
+  {
+    "_id": {
+      "$oid": "6447af70d297195ac0dd2434"
+    },
+    "description": "Italy has been the center of the world for art, architecture, and culture for centuries, and a trip here is like stepping back in time to a world of Renaissance splendor. Explore the iconic landmarks of Rome, Florence, and Venice, from the Colosseum to the Uffizi Gallery to the canals of Venice. Sample the delicious cuisine and wine that Italy is famous for, and experience the warmth and hospitality of the Italian people.",
+    "destination": "Italy",
+    "endDate": {
+      "$date": "2023-03-21T00:00:00.000Z"
+    },
+    "availableSeats": 8,
+    "imgs": [
+      {
+        "alt": "Naples with Vesuvius (32286495892)",
+        "srcFull": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Naples_with_Vesuvius_%2832286495892%29.jpg/1024px-Naples_with_Vesuvius_%2832286495892%29.jpg",
+        "srcThumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Naples_with_Vesuvius_%2832286495892%29.jpg/256px-Naples_with_Vesuvius_%2832286495892%29.jpg",
+        "title": "Carlo Raso from Naples, Italy, PDM-owner, via Wikimedia Commons"
+      },
+      {
+        "alt": "Napoli Alba",
+        "srcFull": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Napoli_Alba.jpg/1024px-Napoli_Alba.jpg",
+        "srcThumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Napoli_Alba.jpg/256px-Napoli_Alba.jpg",
+        "title": "Maurizio Moro5153, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons"
+      }
+    ],
+    "title": "Respublica Nostra",
+    "startDate": {
+      "$date": "2023-03-10T00:00:00.000Z"
+    },
+    "unitPrice": 1469.99
+  },
+  {
+    "_id": {
+      "$oid": "6447af70d297195ac0dd2435"
+    },
+    "description": "Indonesia is a country of contrasts, from the bustling metropolis of Jakarta to the tranquil beaches and tropical rainforests of Bali. Discover the vibrant culture and history of Java, home to the world-famous Borobudur temple and the bustling city of Yogyakarta. Or head to Bali, where you can relax on pristine beaches, take a yoga class, or explore the island's rich spiritual heritage.",
+    "destination": "Indonesia",
+    "endDate": {
+      "$date": "2023-10-21T00:00:00.000Z"
+    },
+    "availableSeats": 12,
+    "imgs": [
+      {
+        "alt": "Busway in Bundaran HI",
+        "srcFull": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Busway_in_Bundaran_HI.jpg/1024px-Busway_in_Bundaran_HI.jpg",
+        "srcThumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Busway_in_Bundaran_HI.jpg/256px-Busway_in_Bundaran_HI.jpg",
+        "title": "Om khonjin, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons"
+      },
+      {
+        "alt": "Kali Besar Jakarta",
+        "srcFull": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Kali_Besar_Jakarta.jpg/1024px-Kali_Besar_Jakarta.jpg",
+        "srcThumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Kali_Besar_Jakarta.jpg/256px-Kali_Besar_Jakarta.jpg",
+        "title": "Zapata1000, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons"
+      },
+      {
+        "alt": "Bangly-Regency Bali Indonesia Lake-Batur-01",
+        "srcFull": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Bangly-Regency_Bali_Indonesia_Lake-Batur-01.jpg/1024px-Bangly-Regency_Bali_Indonesia_Lake-Batur-01.jpg",
+        "srcThumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Bangly-Regency_Bali_Indonesia_Lake-Batur-01.jpg/256px-Bangly-Regency_Bali_Indonesia_Lake-Batur-01.jpg",
+        "title": "Photo by CEphoto, Uwe Aranas"
+      }
+    ],
+    "title": "Southern Megaislands",
+    "startDate": {
+      "$date": "2023-10-15T00:00:00.000Z"
+    },
+    "unitPrice": 939.99
+  },
+  {
+    "_id": {
+      "$oid": "6447af70d297195ac0dd2436"
+    },
+    "description": "Japan is a country at the cutting edge of technology and innovation, and a visit here is like a glimpse into the future. Explore the neon-lit streets of Tokyo, home to some of the world's most advanced technology and futuristic architecture. Visit Osaka, the birthplace of many of Japan's leading tech companies, or take a trip to the historic city of Kyoto, where ancient temples and gardens coexist with modern technology.",
+    "destination": "Japan",
+    "endDate": {
+      "$date": "2023-05-10T00:00:00.000Z"
+    },
+    "availableSeats": 17,
+    "imgs": [
+      {
+        "alt": "Skyscrapers of Shinjuku 2009 January (revised)",
+        "srcFull": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Skyscrapers_of_Shinjuku_2009_January_%28revised%29.jpg/1024px-Skyscrapers_of_Shinjuku_2009_January_%28revised%29.jpg",
+        "srcThumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Skyscrapers_of_Shinjuku_2009_January_%28revised%29.jpg/256px-Skyscrapers_of_Shinjuku_2009_January_%28revised%29.jpg",
+        "title": "Morio, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons"
+      },
+      {
+        "alt": "Sunset on cityscape of Tokyo (2015-01-19 by calvision @Pixabay 617627)",
+        "srcFull": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Sunset_on_cityscape_of_Tokyo_%282015-01-19_by_calvision_%40Pixabay_617627%29.jpg/1024px-Sunset_on_cityscape_of_Tokyo_%282015-01-19_by_calvision_%40Pixabay_617627%29.jpg",
+        "srcThumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Sunset_on_cityscape_of_Tokyo_%282015-01-19_by_calvision_%40Pixabay_617627%29.jpg/256px-Sunset_on_cityscape_of_Tokyo_%282015-01-19_by_calvision_%40Pixabay_617627%29.jpg",
+        "title": "康 复 (calvision) from Tokyo, Japan, CC0, via Wikimedia Commons"
+      }
+    ],
+    "title": "Technopolis",
+    "startDate": {
+      "$date": "2025-05-05T00:00:00.000Z"
+    },
+    "unitPrice": 1869.99
+  },
+  {
+    "_id": {
+      "$oid": "6447af70d297195ac0dd2437"
+    },
+    "description": "Italy is a country of vibrant colors, from the azure waters of the Amalfi Coast to the red roofs of Florence to the golden hues of Tuscany's rolling hills. Explore the colorful towns of Cinque Terre, where pastel-colored houses cling to rocky cliffs above the Mediterranean Sea. Sample the colorful cuisine and wines of the Emilia-Romagna region, or soak up the colorful culture of the island of Sicily.",
+    "destination": "Italy",
+    "endDate": {
+      "$date": "2023-08-08T00:00:00.000Z"
+    },
+    "availableSeats": 5,
+    "imgs": [
+      {
+        "alt": "Vernazza from above",
+        "srcFull": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Vernazza_from_above.JPG/1024px-Vernazza_from_above.JPG",
+        "srcThumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Vernazza_from_above.JPG/256px-Vernazza_from_above.JPG",
+        "title": "Evadb, Public domain, via Wikimedia Commons"
+      },
+      {
+        "alt": "Cinque Terre Settembre 1999 12",
+        "srcFull": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Cinque_Terre_Settembre_1999_12.jpg/1024px-Cinque_Terre_Settembre_1999_12.jpg",
+        "srcThumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Cinque_Terre_Settembre_1999_12.jpg/256px-Cinque_Terre_Settembre_1999_12.jpg",
+        "title": "Infrogmation, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons"
+      },
+      {
+        "alt": "Cinque terre view and trekking",
+        "srcFull": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Cinque_terre_view_and_trekking.jpg/1024px-Cinque_terre_view_and_trekking.jpg",
+        "srcThumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Cinque_terre_view_and_trekking.jpg/256px-Cinque_terre_view_and_trekking.jpg",
+        "title": "Photoexpo, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons"
+      }
+    ],
+    "title": "Colors All Around",
+    "startDate": {
+      "$date": "2023-08-01T00:00:00.000Z"
+    },
+    "unitPrice": 569.99
+  },
+  {
+    "_id": {
+      "$oid": "6447af70d297195ac0dd242b"
+    },
+    "description": "Immerse yourself in the ancient and mysterious world of Egypt, where the pyramids and temples of the Pharaohs have stood the test of time. Discover the awe-inspiring structures of Giza, the Valley of the Kings, and Karnak Temple, and marvel at the intricate hieroglyphics and artwork that adorn them. Learn about the fascinating history and culture of this legendary civilization, and experience the vibrant energy of modern-day Egypt.",
+    "destination": "Egypt",
+    "endDate": {
+      "$date": "2023-03-28T00:00:00.000Z"
+    },
+    "availableSeats": 26,
+    "imgs": [
+      {
+        "alt": "Giza-pyramids",
+        "srcFull": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Giza-pyramids.JPG/1024px-Giza-pyramids.JPG",
+        "srcThumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Giza-pyramids.JPG/256px-Giza-pyramids.JPG",
+        "title": "Robster1983 at English Wikipedia, CC0, via Wikimedia Commons"
+      }
+    ],
+    "title": "Eye of Pharaoh",
+    "startDate": {
+      "$date": "2023-03-23T00:00:00.000Z"
+    },
+    "unitPrice": 679.99
+  }
+]
