@@ -1,0 +1,189 @@
+{
+  $jsonSchema: {
+    bsonType: 'object',
+    title: 'Customer Object Validation',
+    required: [
+      'email',
+      'firstName',
+      'lastName',
+      'phoneNumber',
+      'address'
+        ],
+    properties: {
+      email: {
+        bsonType: 'string'
+            },
+      firstName: {
+        bsonType: 'string'
+            },
+      lastName: {
+        bsonType: 'string'
+            },
+      phoneNumber: {
+        bsonType: 'string'
+            },
+      address: {
+        bsonType: 'object',
+        properties: {
+          country: {
+            bsonType: 'string'
+                    },
+          city: {
+            bsonType: 'string'
+                    },
+          street: {
+            bsonType: 'string'
+                    },
+          postalCode: {
+            bsonType: 'string'
+                    },
+          buildingNumber: {
+            bsonType: 'int',
+            minimum: 1
+                    },
+          apartmentNumber: {
+            bsonType: [
+              'int',
+              'null'
+                        ],
+            minimum: 1
+                    }
+                }
+            }
+        }
+    }
+},
+{
+    $jsonSchema: {
+      bsonType: 'object',
+      title: 'Reservation Agency Validation',
+      required: [
+        'purchaseDate',
+        'boughtTickets',
+        'state',
+        'tripId',
+        'customerId'
+        ],
+      properties: {
+        purchasedDate: {
+          bsonType: 'date'
+            },
+        boughtTickets: {
+          bsonType: 'int',
+          minimum: 1
+            },
+        state: {
+          'enum': [
+            'New',
+            'Purchased',
+            'Cancelled'
+                ]
+            },
+        tripId: {
+          bsonType: 'objectId'
+            },
+        customerId: {
+          bsonType: 'objectId'
+            }
+        }
+    }
+},
+{
+    $jsonSchema: {
+      bsonType: 'object',
+      title: 'Review Object Verification',
+      required: [
+        'comment',
+        'rating',
+        'reviewDate',
+        'tripId',
+        'customerId'
+        ],
+      properties: {
+        comment: {
+          bsonType: 'string'
+            },
+        rating: {
+          bsonType: 'int',
+          minimum: 1,
+          maximum: 5
+            },
+        reviewDate: {
+          bsonType: 'date'
+            },
+        tripId: {
+          bsonType: 'objectId'
+            },
+        customerId: {
+          bsonType: 'objectId'
+            }
+        }
+    }
+},
+{
+    $jsonSchema: {
+      bsonType: 'object',
+      title: 'Trip Object Verification',
+      required: [
+        'description',
+        'destination',
+        'endDate',
+        'availableSeats',
+        'imgs',
+        'title',
+        'startDate',
+        'unitPrice'
+        ],
+      properties: {
+        availableSeats: {
+          bsonType: 'int',
+          minimum: 0
+            },
+        description: {
+          bsonType: 'string'
+            },
+        destination: {
+          bsonType: 'string'
+            },
+        endDate: {
+          bsonType: 'date'
+            },
+        imgs: {
+          bsonType: 'array',
+          required: [
+            'alt',
+            'srcFull',
+            'srcThumbnail',
+            'title'
+                ],
+          properties: {
+            alt: {
+              bsonType: 'string'
+                    },
+            srcFull: {
+              bsonType: 'string'
+                    },
+            srcThumbnail: {
+              bsonType: 'string'
+                    },
+            title: {
+              bsonType: 'string'
+                    }
+                }
+            },
+        title: {
+          bsonType: 'string'
+            },
+        startDate: {
+          bsonType: 'date'
+            },
+        unitPrice: {
+          bsonType: [
+            'double',
+            'decimal'
+                ],
+          minimum: 0
+            }
+        }
+    }
+}
