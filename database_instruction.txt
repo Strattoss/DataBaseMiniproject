@@ -1,0 +1,8 @@
+// uruchom serwer
+mongod.exe --dbpath="C:\Users\filip\Documents\Studia\Bazy_Danych_2\DataBaseMiniproject\mongo_database" 
+
+// zrzuć kolekcje i dokumenty uruchomionego serwera (backup)
+mongodump --db databasename --out /var/backups/mongobackups/backup
+
+// odtwórz kolekcje i dokumenty i "wsadź" je do uruchomionego serwera
+mongorestore C:\Users\filip\Documents\Studia\Bazy_Danych_2\DataBaseMiniproject\mongo_dumped
