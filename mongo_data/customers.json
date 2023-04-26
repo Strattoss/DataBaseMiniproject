@@ -1,206 +1,193 @@
-[
-  {
-    "_id": {
-      "$oid": "6447a9ead297195ac0dd2408"
-    },
-    "email": "dinopimpuslalalalala@gmail.com",
-    "firstName": "Dinozaur",
-    "lastName": "Pimpuś",
-    "phoneNumber": "235463456",
-    "address": {
-      "country": "Poland",
-      "city": "Cracow",
-      "street": "Mickiewicza",
-      "postalCode": "31-120",
-      "buildingNumber": 13,
-      "apartmentNumber": 42
-    }
+[{
+  "_id": {
+    "$oid": "6447a9ead297195ac0dd2408"
   },
-  {
-    "_id": {
-      "$oid": "6447a9ead297195ac0dd2409"
-    },
-    "email": "janedoe456@yahoo.com",
-    "firstName": "Jane",
-    "lastName": "Doe",
-    "phoneNumber": "555-5678",
-    "address": {
-      "country": "Canada",
-      "city": "Toronto",
-      "street": "Yonge Street",
-      "postalCode": "M5B 1R4",
-      "buildingNumber": 789,
-      "apartmentNumber": 1011
-    }
-  },
-  {
-    "_id": {
-      "$oid": "6447a9ead297195ac0dd240a"
-    },
-    "email": "brucewayne@gmail.com",
-    "firstName": "Bruce",
-    "lastName": "Wayne",
-    "phoneNumber": "555-8765",
-    "address": {
-      "country": "United States",
-      "city": "Gotham City",
-      "street": "Wayne Manor",
-      "postalCode": "10007",
-      "buildingNumber": 1,
-      "apartmentNumber": null
-    }
-  },
-  {
-    "_id": {
-      "$oid": "6447a9ead297195ac0dd240b"
-    },
-    "email": "clarkkent@yahoo.com",
-    "firstName": "Clark",
-    "lastName": "Kent",
-    "phoneNumber": "555-2345",
-    "address": {
-      "country": "United States",
-      "city": "Metropolis",
-      "street": "Daily Planet",
-      "postalCode": "10036",
-      "buildingNumber": 999,
-      "apartmentNumber": null
-    }
-  },
-  {
-    "_id": {
-      "$oid": "6447a9ead297195ac0dd240c"
-    },
-    "email": "marie.dupont@yahoo.fr",
-    "firstName": "Marie",
-    "lastName": "Dupont",
-    "phoneNumber": "+33 6 12345678",
-    "address": {
-      "country": "France",
-      "city": "Paris",
-      "street": "Rue de Rivoli",
-      "postalCode": "75001",
-      "buildingNumber": 20,
-      "apartmentNumber": 5
-    }
-  },
-  {
-    "_id": {
-      "$oid": "6447a9ead297195ac0dd240d"
-    },
-    "email": "giovanni.rossi@gmail.com",
-    "firstName": "Giovanni",
-    "lastName": "Rossi",
-    "phoneNumber": "+39 02 1234567",
-    "address": {
-      "country": "Italy",
-      "city": "Milan",
-      "street": "Via Monte Napoleone",
-      "postalCode": "20121",
-      "buildingNumber": 4,
-      "apartmentNumber": 12
-    }
-  },
-  {
-    "_id": {
-      "$oid": "6447a9ead297195ac0dd240e"
-    },
-    "email": "sara.jansen@hotmail.nl",
-    "firstName": "Sara",
-    "lastName": "Jansen",
-    "phoneNumber": "+31 6 12345678",
-    "address": {
-      "country": "Netherlands",
-      "city": "Amsterdam",
-      "street": "Keizersgracht",
-      "postalCode": "1015 CW",
-      "buildingNumber": 100,
-      "apartmentNumber": 3
-    }
-  },
-  {
-    "_id": {
-      "$oid": "6447a9ead297195ac0dd240f"
-    },
-    "email": "liu.yan@hotmail.com",
-    "firstName": "Liu",
-    "lastName": "Yan",
-    "phoneNumber": "+86 10 12345678",
-    "address": {
-      "country": "China",
-      "city": "Beijing",
-      "street": "Wangfujing Street",
-      "postalCode": "100006",
-      "buildingNumber": 5,
-      "apartmentNumber": 15
-    }
-  },
-  {
-    "_id": {
-      "$oid": "6447a9ead297195ac0dd2410"
-    },
-    "email": "hiroshi.nakamura@gmail.com",
-    "firstName": "Hiroshi",
-    "lastName": "Nakamura",
-    "phoneNumber": "+81 3 1234567",
-    "address": {
-      "country": "Japan",
-      "city": "Tokyo",
-      "street": "Shibuya Crossing",
-      "postalCode": "150-0043",
-      "buildingNumber": 2,
-      "apartmentNumber": 21
-    }
-  },
-  {
-    "_id": {
-      "$oid": "6447a9ead297195ac0dd2411"
-    },
-    "email": "ranjit.kumar@yahoo.co.in",
-    "firstName": "Ranjit",
-    "lastName": "Kumar",
-    "phoneNumber": "+91 11 12345678",
-    "address": {
-      "country": "India",
-      "city": "New Delhi",
-      "street": "Connaught Place",
-      "postalCode": "110001",
-      "buildingNumber": 15,
-      "apartmentNumber": 6
-    }
-  },
-  {
-    "_id": {
-      "$oid": "6447a9ead297195ac0dd2412"
-    },
-    "email": "hyun-sook.lee@naver.com",
-    "firstName": "Hyun-Sook",
-    "lastName": "Lee",
-    "phoneNumber": "+82 2 1234567",
-    "address": {
-      "country": "South Korea",
-      "city": "Seoul",
-      "street": "Myeong-dong",
-      "postalCode": "04536",
-      "buildingNumber": 8,
-      "apartmentNumber": 23
-    }
-  },
-  {
-    "_id": {
-      "$oid": "6447a9ead297195ac0dd2413"
-    },
-    "email": "muhammad.ali@hotmail.com.pk",
-    "firstName": "Muhammad",
-    "lastName": "Ali",
-    "phoneNumber": "+92 21 12345678",
-    "address": {
-      "country": "Pakistan",
-      "city": "Karachi",
-      "street": "Tariq Road",
-      "postalCode": "75400",
-      "buildingNumber": 12,
-      "apartmentNumber": 9
-    }
+  "email": "dinopimpuslalalalala@gmail.com",
+  "firstName": "Dinozaur",
+  "lastName": "Pimpuś",
+  "phoneNumber": "235463456",
+  "address": {
+    "country": "Poland",
+    "city": "Cracow",
+    "street": "Mickiewicza",
+    "postalCode": "31-120",
+    "buildingNumber": 13,
+    "apartmentNumber": 42
   }
-]
+},{
+  "_id": {
+    "$oid": "6447a9ead297195ac0dd2409"
+  },
+  "email": "janedoe456@yahoo.com",
+  "firstName": "Jane",
+  "lastName": "Doe",
+  "phoneNumber": "555-5678",
+  "address": {
+    "country": "Canada",
+    "city": "Toronto",
+    "street": "Yonge Street",
+    "postalCode": "M5B 1R4",
+    "buildingNumber": 789,
+    "apartmentNumber": 1011
+  }
+},{
+  "_id": {
+    "$oid": "6447a9ead297195ac0dd240a"
+  },
+  "email": "brucewayne@gmail.com",
+  "firstName": "Bruce",
+  "lastName": "Wayne",
+  "phoneNumber": "555-8765",
+  "address": {
+    "country": "United States",
+    "city": "Gotham City",
+    "street": "Wayne Manor",
+    "postalCode": "10007",
+    "buildingNumber": 1,
+    "apartmentNumber": null
+  }
+},{
+  "_id": {
+    "$oid": "6447a9ead297195ac0dd240b"
+  },
+  "email": "clarkkent@yahoo.com",
+  "firstName": "Clark",
+  "lastName": "Kent",
+  "phoneNumber": "555-2345",
+  "address": {
+    "country": "United States",
+    "city": "Metropolis",
+    "street": "Daily Planet",
+    "postalCode": "10036",
+    "buildingNumber": 999,
+    "apartmentNumber": null
+  }
+},{
+  "_id": {
+    "$oid": "6447a9ead297195ac0dd240c"
+  },
+  "email": "marie.dupont@yahoo.fr",
+  "firstName": "Marie",
+  "lastName": "Dupont",
+  "phoneNumber": "+33 6 12345678",
+  "address": {
+    "country": "France",
+    "city": "Paris",
+    "street": "Rue de Rivoli",
+    "postalCode": "75001",
+    "buildingNumber": 20,
+    "apartmentNumber": 5
+  }
+},{
+  "_id": {
+    "$oid": "6447a9ead297195ac0dd240d"
+  },
+  "email": "giovanni.rossi@gmail.com",
+  "firstName": "Giovanni",
+  "lastName": "Rossi",
+  "phoneNumber": "+39 02 1234567",
+  "address": {
+    "country": "Italy",
+    "city": "Milan",
+    "street": "Via Monte Napoleone",
+    "postalCode": "20121",
+    "buildingNumber": 4,
+    "apartmentNumber": 12
+  }
+},{
+  "_id": {
+    "$oid": "6447a9ead297195ac0dd240e"
+  },
+  "email": "sara.jansen@hotmail.nl",
+  "firstName": "Sara",
+  "lastName": "Jansen",
+  "phoneNumber": "+31 6 12345678",
+  "address": {
+    "country": "Netherlands",
+    "city": "Amsterdam",
+    "street": "Keizersgracht",
+    "postalCode": "1015 CW",
+    "buildingNumber": 100,
+    "apartmentNumber": 3
+  }
+},{
+  "_id": {
+    "$oid": "6447a9ead297195ac0dd240f"
+  },
+  "email": "liu.yan@hotmail.com",
+  "firstName": "Liu",
+  "lastName": "Yan",
+  "phoneNumber": "+86 10 12345678",
+  "address": {
+    "country": "China",
+    "city": "Beijing",
+    "street": "Wangfujing Street",
+    "postalCode": "100006",
+    "buildingNumber": 5,
+    "apartmentNumber": 15
+  }
+},{
+  "_id": {
+    "$oid": "6447a9ead297195ac0dd2410"
+  },
+  "email": "hiroshi.nakamura@gmail.com",
+  "firstName": "Hiroshi",
+  "lastName": "Nakamura",
+  "phoneNumber": "+81 3 1234567",
+  "address": {
+    "country": "Japan",
+    "city": "Tokyo",
+    "street": "Shibuya Crossing",
+    "postalCode": "150-0043",
+    "buildingNumber": 2,
+    "apartmentNumber": 21
+  }
+},{
+  "_id": {
+    "$oid": "6447a9ead297195ac0dd2411"
+  },
+  "email": "ranjit.kumar@yahoo.co.in",
+  "firstName": "Ranjit",
+  "lastName": "Kumar",
+  "phoneNumber": "+91 11 12345678",
+  "address": {
+    "country": "India",
+    "city": "New Delhi",
+    "street": "Connaught Place",
+    "postalCode": "110001",
+    "buildingNumber": 15,
+    "apartmentNumber": 6
+  }
+},{
+  "_id": {
+    "$oid": "6447a9ead297195ac0dd2412"
+  },
+  "email": "hyun-sook.lee@naver.com",
+  "firstName": "Hyun-Sook",
+  "lastName": "Lee",
+  "phoneNumber": "+82 2 1234567",
+  "address": {
+    "country": "South Korea",
+    "city": "Seoul",
+    "street": "Myeong-dong",
+    "postalCode": "04536",
+    "buildingNumber": 8,
+    "apartmentNumber": 23
+  }
+},{
+  "_id": {
+    "$oid": "6447a9ead297195ac0dd2413"
+  },
+  "email": "muhammad.ali@hotmail.com.pk",
+  "firstName": "Muhammad",
+  "lastName": "Ali",
+  "phoneNumber": "+92 21 12345678",
+  "address": {
+    "country": "Pakistan",
+    "city": "Karachi",
+    "street": "Tariq Road",
+    "postalCode": "75400",
+    "buildingNumber": 12,
+    "apartmentNumber": 9
+  }
+}]
