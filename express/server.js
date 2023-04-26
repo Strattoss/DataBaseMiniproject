@@ -21,7 +21,7 @@ const mongoose = require("mongoose");
 
 
 //baza danych 
-const dbURI = "mongodb://127.0.0.1/dbbb";
+const dbURI = "mongodb://127.0.0.1:27017/travel_agency";
 
 mongoose.connect(dbURI, {
   useNewUrlParser: true,
