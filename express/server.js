@@ -38,7 +38,7 @@ mongoose.connection.on("error", (error) => {
 
 
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome to bezkoder application." });
+  res.json({ message: "Server works" });
 });
 
 app.use("/trips", tripRouter);
