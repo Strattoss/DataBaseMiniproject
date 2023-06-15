@@ -46,6 +46,10 @@ const customerSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  userName: {
+    type: String,
+    required: true,
+  },
   email: {
     type: String,
     required: true,
@@ -58,6 +62,18 @@ const customerSchema = new mongoose.Schema({
     type: addressSchema,
     required: true,
   },
+  reservations : {
+    reservationId: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'Reservation',
+      required: true,
+    },
+    tripId: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'Trip',
+      required: true,
+    }
+  }
 });
 
 const Customer = mongoose.model("Customer", customerSchema);

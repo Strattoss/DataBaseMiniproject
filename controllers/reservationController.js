@@ -1,7 +1,9 @@
-const Reservation = require("../models/reservation");
+const Trip = require("../models/trip");
+const Customer = require("../models/customer")
+const Reservation = require("../models/reservation")
 
 const reservationController = {
-  getAllReservations: async (req, res) => {
+  getAllReservations: async (req, res) => { //TODO
     try {
       const reservations = await Reservation.find();
       res.status(200).json(reservations);
@@ -10,17 +12,31 @@ const reservationController = {
     }
   },
 
-  getReservationById: async (req, res) => {
+  getCustomerReservation: async (req, res) => {
+    const start = Date.now()
+    console.log(start)
     try {
-      const reservation = await Reservation.findById(req.params.id);
-      if (!reservation) {
+      //tablica reservations customera z populate-owanym tripId
+      const { reservations } = await Customer.findById(req.params.id).select('reservations').populate('reservations.tripId', 'title destination startDate endDate reservations').lean()
+      //to co będzie zwracane - mapuje każdą parę reservationId, tripId (zpopulowane)
+      const result = reservations.map(r => {
+        let {reservationId, tripId} = r
+        //zwraca tylko poszukiwane rezerwacje
+        const filtered = tripId.reservations.filter(r => r._id.equals(reservationId))
+        
+        return filtered
+      })
+      if (!result) {
         res.status(404).json({ message: "Reservation not found" });
       } else {
-        res.status(200).json(reservation);
+        res.status(200).json(result);
       }
     } catch (error) {
       res.status(500).json({ message: error.message });
     }
+    const end = Date.now()
+    console.log(end)
+    console.log(end - start);
   },
 
   createReservation: async (req, res) => {

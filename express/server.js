@@ -4,7 +4,7 @@ const cors = require("cors");
 const app = express();
 const customerRouter = require("../routers/customerRouter");
 const tripRouter = require("../routers/tripRouter");
-const reviewRouter = require("../routers/reviewRouter");
+// const reviewRouter = require("../routers/reviewRouter");
 const reservationRouter = require("../routers/reservationRouter");
 
 var corsOptions = {
@@ -42,7 +42,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/trips", tripRouter);
-app.use("/reviews", reviewRouter);
+// app.use("/reviews", reviewRouter);
 app.use("/customers", customerRouter);
 app.use("/reservations", reservationRouter);
 

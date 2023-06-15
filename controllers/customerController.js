@@ -12,7 +12,7 @@ const customerController = {
 
   getCustomerById: async (req, res) => {
     try {
-      const customer = await Customer.findById(req.params.id);
+      const customer = await Customer.findById(req.params.id)
       if (!customer) {
         res.status(404).json({ message: "Customer not found" });
       } else {

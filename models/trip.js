@@ -1,23 +1,5 @@
+const reservationSchema = require('./reservation')
 const mongoose = require("mongoose");
-
-const imageSchema = new mongoose.Schema({
-    alt: {
-      type: String,
-      required: true,
-    },
-    srcFull: {
-      type: String,
-      required: true,
-    },
-    srcThumbnail: {
-      type: String,
-      required: true,
-    },
-    title: {
-      type: String,
-      required: true,
-    },
-  });
 
 const tripSchema = new mongoose.Schema({
   description: {
@@ -36,12 +18,12 @@ const tripSchema = new mongoose.Schema({
     type: Date,
     required: true,
   },
-  availableSeats: {
+  seats: {
     type: Number,
     required: true,
     validate: {
       validator: Number.isInteger,
-      message: "availableSeats must be an integer.",
+      message: "seats must be an integer.",
     },
     min: 0,
   },
@@ -54,7 +36,10 @@ const tripSchema = new mongoose.Schema({
     required: true,
     min: 0,
   },
-  images: [imageSchema],
+  reservations: {
+    type: [reservationSchema],
+    required: true,
+  }
 });
 
 const Trip = mongoose.model("Trip", tripSchema);
