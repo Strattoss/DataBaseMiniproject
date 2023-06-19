@@ -1,0 +1,168 @@
+.card {
+    text-align: center;
+}
+
+h2 {
+    margin: 35px;
+}
+
+h3 {
+    margin-top: 40px;
+}
+
+img {
+    width: 80%;
+    height: auto;
+}
+
+#prev, #next {
+    width: 50px;
+    fill: rgb(73, 166, 233);
+    margin: 20px;
+    cursor: pointer;
+}
+
+#next { 
+    transform: rotate(90deg);
+}
+
+#prev { 
+    transform: rotate(-90deg);
+}
+
+#description {
+    padding: 20px;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+#description span {
+    margin-bottom: 10px;
+    display: block;
+}
+
+#flex-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 0.5rem;
+}
+
+#button-container {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+#tickets {
+    background-color: rgb(227, 235, 248);
+    font-weight: 600;
+    border: 0;
+    width: 35px;
+}
+
+#finished-info {
+    margin-top: 50px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+#plus, #minus {
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#rating {
+    text-align: left;
+    padding: 20px;
+}
+
+#opinions {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#add-opinion {
+    margin-left: 20px;
+    font-weight: 600;
+    font-size: 0.8em;
+    padding: 10px;
+    border: 0;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: rgb(152, 168, 248);    
+}
+
+.stars svg {
+    width: 15px;
+    margin: 0;
+    fill: goldenrod;
+}
+
+.opinion {
+    padding: 10px;
+    border-top: 1px dashed;
+}
+
+.review-input.ng-valid{
+    border-left: 5px solid rgb(113, 201, 206);
+}
+
+.ng-valid[required], .ng-valid.required  {
+    border-left: 5px solid #42A948; /* green */
+}
+
+.ng-invalid:not(form)  {
+    border-left: 5px solid rgb(169, 68, 66); /* red */
+}
+
+
+#adder {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    background-color: white;
+}
+
+.form-group {
+    margin: 10px;
+}
+
+.form-group label {
+    margin-right: 10px;
+}
+
+.form-group input {
+    width: 80%;
+    height: 1.5rem;
+    padding: 0.25rem;
+    display: block;
+    border-radius: 5px;
+    border-top: 2px solid rgb(166, 227, 233);
+    border-bottom: 2px solid rgb(166, 227, 233);
+    border-right: 2px solid rgb(166, 227, 233);
+}
+
+h4 {
+    padding: 0 10px;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+}
+
+.alert {
+    color: red;
+    font-size: 0.9em;
+}

@@ -1,0 +1,60 @@
+<!-- <div id="adder">
+    <h2>Dodawanie wycieczki</h2>
+    <form (ngSubmit)="onSubmit()" #addTravelForm="ngForm">
+        <div class="form-group">
+            <label for="name">Nazwa wycieczki</label>
+            <input type="text" id="name" required name="name" minlength="3" [(ngModel)]="model.name" #name="ngModel">
+            <div [hidden]="name.valid || name.pristine" class="alert">
+                Podaj nazwę (przynajmniej 3 znaki)!
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="destination">Państwo</label>
+            <input type="text" id="destination" required name="destination" minlength="3" [(ngModel)]="model.destination" #destination="ngModel">
+            <div [hidden]="destination.valid || destination.pristine" class="alert">
+                Podaj państwo (przynajmniej 3 znaki)!
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="description">Opis</label>
+            <input type="text" id="description" name="description" [(ngModel)]="model.description">
+        </div>
+        <div class="form-group">
+            <label for="startDate">Data rozpoczęcia wycieczki</label>
+            <input type="date" id="startDate" required name="startDate" [(ngModel)]="model.startDate" #startDate="ngModel">
+            <div [hidden]="startDate.valid || startDate.pristine" class="alert">
+                Podaj datę rozpoczęcia!
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="endDate">Data zakończenia wycieczki</label>
+            <input type="date" id="endDate" required name="endDate" [(ngModel)]="model.endDate" #endDate="ngModel">
+            <div [hidden]="endDate.valid || endDate.pristine" class="alert">
+                Podaj datę zakończenia!
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="price">Cena</label>
+            <input type="number" id="price" required name="price" [(ngModel)]="model.price" #price="ngModel">
+            <div [hidden]="price.valid || price.pristine" class="alert">
+                Podaj cenę!
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="seats">Liczba miejsc</label>
+            <input type="number" id="seats" min="1" max="200" required name="seats" [(ngModel)]="model.seats" #seats="ngModel">
+            <div [hidden]="seats.valid || seats.pristine" class="alert">
+                Podaj liczbę miejsc!
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="imgLink">Link do zdjęcia</label>
+            <input type="text" id="imgLink" name="imgLink" [(ngModel)]="model.imgLink">
+        </div>
+        <div class="form-group">
+            <label for="rate">Ocena</label>
+            <input type="number" id="rate" min="0" max="5" name="rate" [(ngModel)]="model.rate">
+        </div>
+        <button type="submit" [disabled]="!addTravelForm.form.valid" id="add-button">Dodaj</button>
+    </form>
+</div> -->

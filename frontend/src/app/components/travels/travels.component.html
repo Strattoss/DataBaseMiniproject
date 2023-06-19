@@ -1,0 +1,3 @@
+<section>
+    <app-travel *ngFor="let travel of (ts.travels | filterPipe: ts.selectedLocations : ts.selectedPrice : ts.minDate : ts.maxDate : ts.selectedStars), index as i" [travel]="travel"></app-travel>
+</section>

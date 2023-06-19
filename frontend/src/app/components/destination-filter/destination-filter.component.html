@@ -1,0 +1,7 @@
+<h3>Lokalizacja</h3>
+<div>
+    <label *ngFor="let location of ts.locations">
+        <input type="checkbox" (change)="change(location)" [checked]="ts.selectedLocations.indexOf(location) != -1">
+        {{ location }}
+    </label>
+</div>

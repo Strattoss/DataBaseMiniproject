@@ -1,0 +1,12 @@
+const express = require("express");
+const reservationController = require("../controllers/reservationController");
+const router = express.Router();
+
+router.get("/", reservationController.getAllReservations);
+router.get("/:id", reservationController.getCustomerReservations);
+router.post("/", reservationController.createReservation);
+router.post("/review", reservationController.createReview);
+router.put("/", reservationController.resignReservation);
+
+
+module.exports = router;
