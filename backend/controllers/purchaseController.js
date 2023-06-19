@@ -1,4 +1,3 @@
-const { filter } = require("rxjs");
 const Customer = require("../models/customer")
 const Trip = require("../models/trip")
 

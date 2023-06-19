@@ -9,11 +9,15 @@ const tripController = {
         let availableSeats = seats
         let ratingSum = 0.0
         let rates = 0
+        let canBeDeleted = true
         if(reservations !== undefined)
         {
           for(const reservation of reservations) {
             if(reservation.state != "Cancelled")
+            {
               availableSeats -= reservation.tickets
+              canBeDeleted = false
+            }
             if(reservation.review) {
               ratingSum += reservation.review.rating
               rates++
@@ -23,6 +27,7 @@ const tripController = {
         return {
           availableSeats: availableSeats,
           avgRating: rates == 0 ? null : Math.round(ratingSum / rates),
+          canBeDeleted: canBeDeleted,
           ...rest
         }
       })
@@ -86,6 +91,7 @@ const tripController = {
   //   reviews: reservations === undefined ? null : reservations.filter(x => x.review).map(x => x.review),
   //   ...rest
   // }
+
 
   createTrip: async (req, res) => {
     try {

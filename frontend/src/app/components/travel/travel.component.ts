@@ -10,7 +10,6 @@ import { TravelService } from '../../services/travel.service';
 })
 export class TravelComponent {
   @Input() travel : Trip
-  reservedTickets = 0
   warning = "Zarezerwuj już dziś!"
   ts
   cs
@@ -26,10 +25,5 @@ export class TravelComponent {
 
   isCurrent(start : Date, end : Date) {
     return new Date(start) < new Date() && new Date(end) > new Date()
-  }
-
-  delete() : void {
-    this.reservedTickets = 0
-    this.ts.deleteTravel(this.travel)
   }
 }

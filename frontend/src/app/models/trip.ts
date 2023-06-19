@@ -10,5 +10,6 @@ export interface Trip {
     title: string, 
     unitPrice: number,
     avgRating: number,
+    canBeDeleted: boolean,
     reviews: Review[]
 }

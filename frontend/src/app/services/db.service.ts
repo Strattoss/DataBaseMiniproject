@@ -67,11 +67,18 @@ export class DBService {
     return this.http.post<Reservation>(`${reservationsUrl}/review`, body).subscribe()
   }
 
-  // addTravel(t: Trip): Observable<Trip> {
-  //   return this.http.post<Trip>(tripsUrl, t)
-  // }
+  newTravel(title: string, destination: string, description: string, startDate: string, endDate: string, seats: number, unitPrice: number) {        
+    const body = new HttpParams().set("title", title)
+                                 .set("destination", destination)
+                                 .set("description", description)
+                                 .set("startDate", startDate)
+                                 .set("endDate", endDate)
+                                 .set("seats", seats)
+                                 .set("unitPrice", unitPrice)
+    return this.http.post<Trip>(tripsUrl, body).subscribe()
+  }
 
-  // deleteTravel(key: string): Observable<Trip> {
-  //   return this.http.delete<Trip>(`${tripsUrl}/${key}`)
-  // }
+  deleteTravel(key: string) {
+    return this.http.delete<Trip>(`${tripsUrl}/${key}`).subscribe()
+  }
 }
