@@ -1,0 +1,15 @@
+<main>
+    <h2>Historia zakupów</h2>    
+    
+    <div *ngFor="let purchase of cs.purchases, index as i" class="detail">
+        <strong> {{ purchase.title | uppercase }} </strong><br> 
+        Lokalizacja: <strong> {{ purchase.destination }} </strong><br>
+        Od: <strong> {{ purchase.startDate | date:"dd.MM.yyyy" }} </strong><br>
+        Do: <strong> {{ purchase.endDate | date:"dd.MM.yyyy" }} </strong><br>
+        Data rezerwacji wycieczki: <strong> {{ purchase.reservationDate | date:"dd.MM.yyyy, h:mm a"}} </strong><br>
+        Data zakupu wycieczki: <strong> {{ purchase.purchaseDate | date:"dd.MM.yyyy, h:mm a"}} </strong><br>
+        Status wycieczki: <strong> {{ checkStatus(purchase) }} </strong><br>
+        Liczba kupionych wycieczek: <strong> {{ purchase.tickets }} </strong><br>
+        Zapłacono: <strong>{{ purchase.tickets * purchase.price | currency: 'EUR'}}</strong>
+    </div>    
+</main>

@@ -1,0 +1,21 @@
+<main>
+    <a routerLink="/cart" routerLinkActive="active" id="cart-link">
+        <h2>Koszyk</h2>
+    </a>
+    <div id="main">
+        <span  [ngClass]="{'few': cs.fullReservations < 10, 'many': cs.fullReservations >= 10}">
+            Liczba biletów:  <div class="r">{{ cs.fullReservations }}</div>
+        </span> 
+    </div>
+    
+    <div *ngFor="let reservation of cs.reservations, index as i" class="detail">
+        
+        {{ reservation.title }}<br> 
+        {{ reservation.tickets }} x {{ reservation.price | currency: 'EUR' }}
+        <div class="r">
+            {{ reservation.tickets * reservation.price | currency:'EUR' }}
+        </div>
+    </div>
+    <div id="summary" [ngClass]="{'few': cs.fullReservations < 10, 'many': cs.fullReservations >= 10}" *ngIf="cs.fullReservations > 0">{{ cs.fullPrice | currency:'EUR' }}</div>
+    
+</main>

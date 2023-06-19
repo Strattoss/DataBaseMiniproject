@@ -1,0 +1,13 @@
+main {
+    padding-top: 5px;
+}
+
+h2, .detail {
+    margin-left: 15px;
+}
+
+.detail {
+    padding: 20px;
+    margin: 15px 0;
+    border-bottom: 2px dashed;
+}

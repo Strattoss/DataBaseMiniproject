@@ -1,0 +1,33 @@
+<main>
+    <h2>Koszyk</h2>
+
+    <div id="main">
+        <span  [ngClass]="{'few': cs.fullReservations < 10, 'many': cs.fullReservations >= 10}" *ngIf="cs.fullReservations > 0; else noreservations">
+            Liczba wycieczek:  <div class="r">{{ cs.fullReservations }}</div>
+        </span> 
+        <ng-template #noreservations>
+            <span class="few">
+                Twój koszyk jest pusty! Kliknij <a routerLink="/travels" routerLinkActive="active">tutaj</a>, żeby przeglądnąć aktualną ofertę wycieczek.
+            </span>
+        </ng-template>
+    </div>
+
+    
+    <div *ngFor="let reservation of cs.reservations, index as i" class="detail">
+        <strong> {{ reservation.title | uppercase }} </strong><br> 
+        Lokalizacja: <strong> {{ reservation.destination }} </strong><br>
+        Od: <strong> {{ reservation.startDate | date:"dd.MM.yyyy" }} </strong><br>
+        Do: <strong> {{ reservation.endDate | date:"dd.MM.yyyy" }} </strong><br>
+        <strong>{{ reservation.tickets }}</strong> x <strong>{{ reservation.price | currency: 'EUR' }}</strong>
+        <div class="r">
+            <strong>{{ reservation.tickets * reservation.price | currency:'EUR' }}</strong>
+        </div>
+        <div class="reservation-container">
+            <div class="buttons-container">
+                <button (click)="cs.buy(reservation.tripId, reservation._id)">Kup</button>
+                <button id="resign" (click)="cs.resign(reservation.tripId, reservation._id)">Zrezygnuj</button>
+            </div>
+        </div>
+    </div>
+    <div id="summary" [ngClass]="{'few': cs.fullReservations < 10, 'many': cs.fullReservations >= 10}" *ngIf="cs.fullReservations > 0">{{ cs.fullPrice | currency:'EUR' }}</div>    
+</main>

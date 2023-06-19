@@ -1,0 +1,111 @@
+.card {
+    text-align: center;
+    padding: 20px;
+    margin: 2rem 0;
+    border-radius: 12px;
+    background-color: white;
+}
+
+#flex-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#datas {
+    padding: 0 25px;
+}
+
+#description {
+    text-align: justify;
+    padding: 0 25px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 0.5rem;
+}
+
+#plus, #minus {
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+}
+
+button {
+    cursor: pointer;
+}
+
+#button-container {
+    margin-top: 30px;
+}
+
+#warning, #finished-info {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+#warning {
+    margin-bottom: 30px;
+}
+
+#finished-info a:link, a:visited, a:hover, a:active {
+    text-decoration: underline;
+    color: black;
+}
+
+#finished-info {
+    margin-top: 50px;
+}
+
+#reservation {
+    padding: 0.5rem 25px;
+}
+
+.minPrice {
+    border: 3px green solid;
+}
+
+.maxPrice {
+    border: 3px red solid;
+}
+
+img {
+    margin-right: -35px;
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+}
+
+#delete {
+    color: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+}
+
+#details {
+    cursor: pointer;
+    margin: 0;
+    float: right;
+}
+
+svg {
+    width: 30px;
+    margin: 0 5px;
+    fill: goldenrod;
+}
+
+#info-svg {
+    margin: 0;
+    margin-bottom: -10px;
+    width: 35px;
+    fill: black;
+}
+
+@media (max-width: 992px) {
+    #description {
+        text-align: left;
+    }
+}

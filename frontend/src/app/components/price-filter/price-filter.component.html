@@ -1,0 +1,7 @@
+<h3>Cena maksymalna</h3>
+<div>
+    <label>
+        <input type="range" [min]="ts.minPrice" [max]="ts.maxPrice" [(ngModel)]="ts.selectedPrice">
+    </label>
+    <span> {{ ts.selectedPrice }} </span>
+</div>
