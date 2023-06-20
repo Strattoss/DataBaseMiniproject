@@ -1,0 +1,66 @@
+.card {
+    text-align: center;
+}
+
+h2 {
+    margin: 35px;
+}
+
+h3 {
+    margin-top: 40px;
+}
+
+#flex-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 0.5rem;
+}
+
+#adress-container {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+#reservations {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+h4 {
+    padding: 0 10px;
+}
+
+.detail {
+    text-align: left;
+    padding: 20px;
+    margin: 15px 0;
+    border-bottom: 2px dashed;
+}
+
+#purchase {
+    background-color: rgb(152, 168, 248, 0.6);
+}
+
+#reservation {
+    background-color: rgb(255, 215, 0, 0.6);
+}
+
+#cancelled {
+    background-color: rgb(233, 119, 119, 0.6);
+}
+
+#purchase, #reservation, #cancelled {
+    padding: 5px;
+    margin: 25px 0;
+}

@@ -1,11 +1,9 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { CartService } from '../../services/cart.service';
-// import { Opinion } from '../../models/review';
 import { Trip } from '../../models/trip';
 import { TravelService } from '../../services/travel.service';
 import { Review } from 'src/app/models/review';
-// import { TravelClass } from '../../models/u_travelClass';
 
 @Component({
   selector: 'app-travel-details',
@@ -46,8 +44,9 @@ export class TravelDetailsComponent {
   }
 
   reserve() : void {    
-    this.reservedTickets = 1
     this.cs.reserve(this.travel._id, this.reservedTickets, this.travel.unitPrice) 
+    this.reservedTickets = 1
+    this.route.params.subscribe(params => this.ts.getTravelByKey(params['key']).subscribe(res => this.travel = res))
   }
 
   showForm() {

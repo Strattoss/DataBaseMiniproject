@@ -45,6 +45,39 @@ const reservationController = {
     }
   },
 
+  getCustomerCancelledReservations: async (req, res) => {
+    try {
+      //tablica reservations customera z populate-owanym tripId
+      const { reservations } = await Customer.findById(req.params.id).select('reservations').populate('reservations.tripId', 'title destination startDate endDate reservations').lean()
+      //to co będzie zwracane - mapuje każdą parę reservationId, tripId (zpopulowane)
+      const result = reservations.map(r => {
+        const {reservationId, tripId} = r
+        //zwraca tylko poszukiwane rezerwacje
+        const filtered = tripId.reservations.find(r => r._id.equals(reservationId) && r.state == 'Cancelled')
+        if(filtered !== undefined) {
+          const { review, ...rest } = filtered
+          return {
+            title: tripId.title,
+            destination: tripId.destination,
+            startDate: tripId.startDate,
+            endDate: tripId.endDate,
+            tripId: tripId._id,
+            ...rest
+          }
+        }
+
+        return filtered
+      }).filter(r => r != null)
+      if (!result) {
+        res.status(404).json({ message: "Reservation not found" });
+      } else {
+        res.status(200).json(result);
+      }
+    } catch (error) {
+      res.status(500).json({ message: error.message });
+    }
+  },
+
   createReservation: async (req, res) => {
     let newReservation = null
     try {
@@ -99,7 +132,8 @@ const reservationController = {
       const updatedReservation = await Trip.findOneAndUpdate(
         { "_id": req.body.tripId, "reservations._id": req.body.reservationId },
         { "$set": {
-          "reservations.$.state": 'Cancelled'
+          "reservations.$.state": 'Cancelled',
+          "reservations.$.cancelationDate": new Date()
         } }
       );
       if (!updatedReservation) {

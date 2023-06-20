@@ -6,7 +6,8 @@ export interface Customer {
     lastName: string,
     email: string,
     phoneNumber: string,
-    adress: Adress,
+    address: Adress,
+    numberOfReservations: number,
     reservations: {
         reservationId: string,
         tripId: string

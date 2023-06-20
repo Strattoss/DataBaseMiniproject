@@ -31,6 +31,16 @@ export class TravelService {
     })
   }
 
+  refreshTravels() {
+    this.dbService.getTravels().subscribe(res => {
+      this.travels = res
+      this.setLocations()
+      this.selectedPrice = this.maxPrice
+      this.minDate = new Date()
+      this.setMaxDate()
+    })
+  }
+
   getTravelByKey(key: string): Observable<Trip> {
     return this.dbService.getTravelByKey(key)
   }
@@ -90,9 +100,11 @@ export class TravelService {
 
   newTravel(title: string, destination: string, description: string, startDate: string, endDate: string, seats: number, unitPrice: number) {        
     this.dbService.newTravel(title, destination, description, startDate, endDate, seats, unitPrice)
+    this.refreshTravels()
   }
 
   deleteTravel(tripId : string) {
     this.dbService.deleteTravel(tripId)
+    this.refreshTravels()
   }
 }

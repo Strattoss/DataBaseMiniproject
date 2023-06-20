@@ -9,6 +9,8 @@ import { TravelDetailsComponent } from './components/travel-details/travel-detai
 import { TravelComponent } from './components/travel/travel.component';
 import { TravelsViewComponent } from './components/travels-view/travels-view.component';
 import { TravelsComponent } from './components/travels/travels.component';
+import { CustomersComponent } from './components/customers/customers.component';
+import { CustomerDetailsComponent } from './components/customer-details/customer-details.component';
 
 
 const routes: Routes = [
@@ -17,7 +19,8 @@ const routes: Routes = [
   {path: 'travels', component: TravelsViewComponent},
   {path: 'orders', component: HistoryComponent},
   {path: 'cart', component: CartDetailsComponent},
-  {path: 'user', component: CartComponent},
+  {path: 'users', component: CustomersComponent},
+  {path: 'users/:key', component: CustomerDetailsComponent},
   {path: '', component: MainViewComponent},
 ]
 
