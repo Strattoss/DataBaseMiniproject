@@ -23,9 +23,6 @@ import { CartDetailsComponent } from './components/cart-details/cart-details.com
 import { TravelsViewComponent } from './components/travels-view/travels-view.component';
 import { TravelDetailsComponent } from './components/travel-details/travel-details.component';
 import { CartService } from './services/cart.service';
-import { AngularFireModule } from "@angular/fire/compat";
-import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
-import { environment } from '../environments/environment';
 import { HistoryComponent } from './components/history/history.component';
 import { CustomersComponent } from './components/customers/customers.component';
 import { CustomerDetailsComponent } from './components/customer-details/customer-details.component';

@@ -1,3 +1,4 @@
-/express/node_modules
+/node_modules
 /mongo_database
+/mongo_dumped/admin
 /.idea
