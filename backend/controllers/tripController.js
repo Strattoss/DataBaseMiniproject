@@ -1,3 +1,4 @@
+const reservationSchema = require("../models/reservation");
 const Trip = require("../models/trip");
 
 const tripController = {
@@ -103,25 +104,17 @@ const tripController = {
     }
   },
 
-  updateTrip: async (req, res) => {
-    try {
-      const updatedTrip = await Trip.findByIdAndUpdate(req.params.id, req.body, {
-        new: true,
-        runValidators: true,
-      });
-      if (!updatedTrip) {
-        res.status(404).json({ message: "Trip not found" });
-      } else {
-        res.status(200).json(updatedTrip);
-      }
-    } catch (error) {
-      res.status(500).json({ message: error.message });
-    }
-  },
-
   deleteTrip: async (req, res) => {
     try {
-      const deletedTrip = await Trip.findByIdAndDelete(req.params.id);
+      const tripToDelete = await Trip.findById(req.params.id).select('reservations');
+      const canBeDeleted = tripToDelete.reservations.filter(r => r.state != 'Cancelled').length == 0 
+
+      if(!canBeDeleted) {
+        res.status(500).json({ message: "Cannot delete trip with reservations" });
+        return
+      }
+      
+      const deletedTrip = await Trip.findByIdAndDelete(req.params.id)
       if (!deletedTrip) {
         res.status(404).json({ message: "Trip not found" });
       } else {

@@ -20,7 +20,8 @@ const reservationSchema = new mongoose.Schema({
   },
   price: {
     type: Number,
-    required: true
+    required: true,
+    min: 1
   },
   state: {
     type: String,
@@ -46,6 +47,7 @@ const reservationSchema = new mongoose.Schema({
           message: "rating must be an integer.",
         },
         min: 1,
+        max: 5
       },
       reviewDate: {
         type: Date,

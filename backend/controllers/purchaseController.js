@@ -33,6 +33,9 @@ const purchaseController = {
   },
   buyReservation: async (req, res) => {
     try {
+      const reservationToResign = await Trip.findById(req.body.tripId).select('reservations')
+      const canBeResigned = reservationToResign.reservations.filter(r => r._id == req.body.reservationId && r.state == 'New').length > 0
+      
       const updatedReservation = await Trip.findOneAndUpdate(
         { "_id": req.body.tripId, "reservations._id": req.body.reservationId },
         { "$set": {

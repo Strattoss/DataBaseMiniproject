@@ -34,6 +34,9 @@
                 Data rezerwacji wycieczki: <strong> {{ purchase.reservationDate | date:"dd.MM.yyyy, h:mm a"}} </strong><br>
                 Data zakupu wycieczki: <strong> {{ purchase.purchaseDate | date:"dd.MM.yyyy, h:mm a"}} </strong><br>
                 Status wycieczki: <strong> {{ checkStatus(purchase) }} </strong><br>
+                <span *ngIf="checkStatus(purchase) == 'archiwalna'">
+                    Zostawiono opinie: <strong> {{ purchase.review ? "tak" : "nie" }} </strong><br>
+                </span>
                 Liczba kupionych wycieczek: <strong> {{ purchase.tickets }} </strong><br>
                 Zapłacono: <strong>{{ purchase.tickets * purchase.price | currency: 'EUR'}}</strong>
             </div>    

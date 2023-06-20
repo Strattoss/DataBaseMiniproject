@@ -48,7 +48,7 @@ tripSchema.pre('save', function(next) {
     next(new Error('Brak wolnych miejsc'))
   }
   else
-    next()
+  next()
 })
 
 const Trip = mongoose.model("Trip", tripSchema);
