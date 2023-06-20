@@ -12,6 +12,10 @@
                 <button id="details">Szczegóły</button>
             </a>
             <button (click)="cs.changeCustomer(customer._id)" id="choose">Wybierz</button>
+            <button (click)="cs.deleteCustomer(customer._id)" id="delete">Usuń</button>
         </div>    
     </div>
+    <a routerLink="add">
+        <button id="add">Dodaj nowego użytkownika</button>
+    </a>
 </main>
