@@ -1,12 +1,13 @@
-// uruchom serwer
-mongod.exe --dbpath="C:\Users\filip\Documents\Studia\Bazy_Danych_2\DataBaseMiniproject\mongo_database" 
+// run mongo database
+mongod.exe --dbpath="[database path]" 
 
-// zrzuć kolekcje i dokumenty uruchomionego serwera (backup)
-mongodump --out C:\Users\filip\Documents\Studia\Bazy_Danych_2\DataBaseMiniproject\mongo_dumped
+// dump the collections and documents of the running server
+mongodump --out [path]
 
-// odtwórz kolekcje i dokumenty i "wsadź" je do uruchomionego serwera
-mongorestore C:\Users\filip\Documents\Studia\Bazy_Danych_2\DataBaseMiniproject\mongo_dumped
+// recreate collections and documents and "upload" them to the running server
+mongorestore [path to mongodump directory]
 
 // server.js instruction
-set NODE_PATH=C:\Users\filip\Documents\Studia\Bazy_Danych_2\DataBaseMiniproject\express\node_modules;%NODE_PATH%
-node server.js
+cd [your path]\DataBaseMiniproject\backend
+npm install
+node .\express\server.js
