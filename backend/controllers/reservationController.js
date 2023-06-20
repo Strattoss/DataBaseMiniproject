@@ -97,6 +97,14 @@ const reservationController = {
 
   createReview: async (req, res) => {
     try {
+      const tripToReview = await Trip.findById(req.body.tripId).select('reservations')
+      const canBeReviewed = tripToReview.reservations.filter(r => r._id == req.body.reservationId && r.state == 'New' && tripToReview.endDate < new Date()).length > 0
+    
+      if(!canBeReviewed) {
+        res.status(500).json({ message: `Cannot add review for this trip` })
+        return
+      }
+
       const updatedReservation = await Trip.findOneAndUpdate(
         { "_id": req.body.tripId, "reservations._id": req.body.reservationId },
         { "$set": {
@@ -105,7 +113,7 @@ const reservationController = {
             rating: req.body.rating,
             reviewDate: new Date()
           }
-        } }
+        }}
       );
       if (!updatedReservation) {
         res.status(404).json({ message: "Reservation not found" });

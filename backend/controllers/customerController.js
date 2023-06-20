@@ -59,13 +59,11 @@ const customerController = {
   },
 
   deleteCustomer: async (req, res) => {
-    try {
-      const customerToDelete = await Customer.findById(req.params.id).select('reservations').populate;
-      
+    try {      
       let canBeDeleted = true
-
-      const { reservations } = await Customer.findById(req.params.id).select('reservations').populate('reservations.tripId', 'reservations').lean()
-      const result = reservations.map(r => {
+      
+      const { reservations } = await Customer.findById(req.params.id).select('reservations').populate('reservations.tripId', 'reservations').lean()      
+      reservations.map(r => {
         const {reservationId, tripId} = r
         const filtered = tripId.reservations.find(r => r._id.equals(reservationId) && r.state != 'Cancelled')
         if(filtered !== undefined) {

@@ -44,7 +44,7 @@ const tripController = {
       const {seats, reservations, ...rest} = await Trip.findById(req.params.id).populate('reservations.customerId', 'username').lean();
       let availableSeats = seats
       let ratingSum = 0.0
-        let rates = 0
+      let rates = 0
       if(reservations !== undefined)
       {
         for(const reservation of reservations) {
