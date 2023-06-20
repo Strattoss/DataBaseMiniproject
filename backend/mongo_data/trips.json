@@ -26,6 +26,7 @@
             {
                 "_id": ObjectId("64482a4e8c343fb3405c2518"),
                 "reservationDate": ISODate("2022-05-20T11:30:07.559Z"),
+                "cancelationDate": ISODate("2022-05-25T12:32:17.559Z"),
                 "price": 1369,
                 "tickets": 1,
                 "state": "Cancelled",
@@ -49,7 +50,7 @@
                 "purchaseDate": ISODate("2023-01-15T11:02:25.661Z"),
                 "tickets": 1,
                 "price": 1129,
-                "state": "New",
+                "state": "Purchased",
                 "customerId": ObjectId("6447a9ead297195ac0dd240a"),
             },
             {
@@ -58,7 +59,7 @@
                 "purchaseDate": ISODate("2023-05-16T11:02:25.661Z"),
                 "tickets": 3,
                 "price": 1129,
-                "state": "New",
+                "state": "Purchased",
                 "customerId": ObjectId("6489f6b9bbb9fa29afe01fe4"),
             }
         ]
@@ -225,6 +226,7 @@
             {
                 "_id": ObjectId("64482a4e8e399eb38853342c"),
                 "reservationDate": ISODate("2022-03-14T10:58:14.923Z"),
+                "cancelationDate": ISODate("2022-03-15T07:03:24.421Z"),
                 "price": 1899,
                 "tickets": 3,
                 "state": "Cancelled",
