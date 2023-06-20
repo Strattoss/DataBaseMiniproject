@@ -33,7 +33,6 @@ const addressSchema = new mongoose.Schema({
       validator: Number.isInteger,
       message: "apartmentNumber must be an integer.",
     },
-    min: 1,
   },
 });
 

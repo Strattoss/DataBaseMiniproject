@@ -5,7 +5,6 @@ const purchaseController = {
   getCustomerPurchases: async (req, res) => {
     try {
       const { reservations } = await Customer.findById(req.params.id).select('reservations').populate('reservations.tripId', 'title destination startDate endDate reservations').lean()
-      //to co będzie zwracane - mapuje każdą parę reservationId, tripId (zpopulowane)
       const result = reservations.map(r => {
         const {reservationId, tripId} = r
         const filtered = tripId.reservations.find(r => r._id.equals(reservationId) && r.state == 'Purchased')

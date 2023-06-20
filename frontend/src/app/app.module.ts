@@ -29,6 +29,7 @@ import { environment } from '../environments/environment';
 import { HistoryComponent } from './components/history/history.component';
 import { CustomersComponent } from './components/customers/customers.component';
 import { CustomerDetailsComponent } from './components/customer-details/customer-details.component';
+import { AddCustomerFormComponent } from './components/add-customer-form/add-customer-form.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,7 @@ import { CustomerDetailsComponent } from './components/customer-details/customer
     RatingComponent,
     FiltersComponent,
     DestinationFilterComponent, 
-    FilterPipe, PriceFilterComponent, DateFilterComponent, RatingFilterComponent, AddTravelFormComponent, CartComponent, MainViewComponent, CartDetailsComponent, TravelsViewComponent, TravelDetailsComponent, HistoryComponent, CustomersComponent, CustomerDetailsComponent
+    FilterPipe, PriceFilterComponent, DateFilterComponent, RatingFilterComponent, AddTravelFormComponent, CartComponent, MainViewComponent, CartDetailsComponent, TravelsViewComponent, TravelDetailsComponent, HistoryComponent, CustomersComponent, CustomerDetailsComponent, AddCustomerFormComponent
   ],
   imports: [
     BrowserModule,

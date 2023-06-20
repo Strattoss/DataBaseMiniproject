@@ -37,25 +37,22 @@ const customerController = {
 
   createCustomer: async (req, res) => {
     try {
-      const customer = new Customer(req.body);
+      const { country, city, street, postalCode, buildingNumber, apartmentNumber, ...rest } = req.body
+      const data = {
+        ...rest,
+        address : {
+          country: country,
+          city: city,
+          street: street,
+          postalCode: postalCode,
+          buildingNumber: buildingNumber,
+          apartmentNumber: apartmentNumber
+        }
+      }
+      
+      const customer = new Customer(data);
       await customer.save();
       res.status(201).json(customer);
-    } catch (error) {
-      res.status(500).json({ message: error.message });
-    }
-  },
-
-  updateCustomer: async (req, res) => {
-    try {
-      const updatedCustomer = await Customer.findByIdAndUpdate(req.params.id, req.body, {
-        new: true,
-        runValidators: true,
-      });
-      if (!updatedCustomer) {
-        res.status(404).json({ message: "Customer not found" });
-      } else {
-        res.status(200).json(updatedCustomer);
-      }
     } catch (error) {
       res.status(500).json({ message: error.message });
     }

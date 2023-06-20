@@ -31,3 +31,14 @@ button {
 #choose {
     background-color: #E8F3D6;
 }
+
+#delete {
+    background-color: #E97777;
+}
+
+#add {
+    margin-top: 25px;
+    font-size: 1rem;
+    padding: 10px;
+    background-color: rgb(179, 231, 179, 0.7);
+}

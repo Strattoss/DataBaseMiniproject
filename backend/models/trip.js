@@ -42,6 +42,15 @@ const tripSchema = new mongoose.Schema({
   }
 });
 
+tripSchema.pre('save', function(next) {
+  const reservedSeats = this.reservations.filter(x => x.state != 'Cancelled').map(x => x.tickets).reduce((a, b) => a + b, 0)
+  if(this.seats < reservedSeats){
+    next(new Error('Brak wolnych miejsc'))
+  }
+  else
+    next()
+})
+
 const Trip = mongoose.model("Trip", tripSchema);
 
 module.exports = Trip;

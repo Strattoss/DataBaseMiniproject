@@ -94,4 +94,23 @@ export class DBService {
   deleteTravel(key: string) {
     return this.http.delete<Trip>(`${tripsUrl}/${key}`).subscribe()
   }
+
+  newCustomer(c : Customer) {
+    const body = new HttpParams().set("firstName", c.firstName)
+                                 .set("lastName", c.lastName)
+                                 .set("userName", c.username)
+                                 .set("phoneNumber", c.phoneNumber)
+                                 .set("email", c.email)
+                                 .set("country", c.address.country)
+                                 .set("city", c.address.city)
+                                 .set("street", c.address.street)
+                                 .set("postalCode", c.address.postalCode)
+                                 .set("buildingNumber", c.address.buildingNumber)
+                                 .set("apartmentNumber", c.address.apartmentNumber)
+    return this.http.post<Customer>(customersUrl, body).subscribe()
+  }
+
+  deleteCustomer(id: string) {
+    return this.http.delete<Customer>(`${customersUrl}/${id}`).subscribe()
+  }
 }

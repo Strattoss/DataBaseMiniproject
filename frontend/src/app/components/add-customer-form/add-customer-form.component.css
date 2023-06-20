@@ -1,0 +1,52 @@
+input.ng-valid{
+    border-left: 5px solid rgb(113, 201, 206);
+}
+
+.ng-valid[required], .ng-valid.required  {
+    border-left: 5px solid #42A948; /* green */
+}
+
+.ng-invalid:not(form)  {
+    border-left: 5px solid rgb(169, 68, 66); /* red */
+}
+
+
+#adder, #another {
+    margin-top: 30px;
+    border-radius: 12px;
+    padding: 10px 0;
+    background-color: white;
+}
+
+.form-group {
+    margin: 10px;
+}
+
+.form-group label {
+    margin-right: 10px;
+}
+
+.form-group input {
+    width: 80%;
+    height: 1.5rem;
+    padding: 0.25rem;
+    display: block;
+    border-radius: 5px;
+    border-top: 2px solid rgb(166, 227, 233);
+    border-bottom: 2px solid rgb(166, 227, 233);
+    border-right: 2px solid rgb(166, 227, 233);
+}
+
+h2 {
+    padding: 0 10px;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+}
+
+.alert {
+    color: red;
+    font-size: 0.9em;
+}

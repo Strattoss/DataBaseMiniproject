@@ -1,0 +1,80 @@
+<div id="adder">
+    <h2>Dodawanie wycieczki</h2>
+    <form (ngSubmit)="onSubmit()" #addCustomerForm="ngForm">
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" required name="username" minlength="3" [(ngModel)]="model.username" #username="ngModel">
+            <div [hidden]="username.valid || username.pristine" class="alert">
+                Podaj swój username (przynajmniej 3 znaki)!
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="name">Imię</label>
+            <input type="text" id="name" required name="name" minlength="2" [(ngModel)]="model.firstName" #name="ngModel">
+            <div [hidden]="name.valid || name.pristine" class="alert">
+                Podaj swoje imię (przynajmniej 2 znaki)!
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="lastName">Nazwisko</label>
+            <input type="text" id="lastName" required name="lastName" minlength="2" [(ngModel)]="model.lastName" #lastName="ngModel">
+            <div [hidden]="lastName.valid || lastName.pristine" class="alert">
+                Podaj swoje nazwisko (przynajmniej 2 znaki)!
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="phoneNumber">Numer telefonu</label>
+            <input type="text" id="phoneNumber" required name="phoneNumber"[(ngModel)]="model.phoneNumber" #phoneNumber="ngModel">
+            <div [hidden]="phoneNumber.valid || phoneNumber.pristine" class="alert">
+                Podaj swój numer telefonu!
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" id="email" required name="email" [(ngModel)]="model.email" #email="ngModel">
+            <div [hidden]="email.valid || email.pristine" class="alert">
+                Podaj swój adres email!
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="country">Państwo</label>
+            <input type="text" id="country" required name="country" minlength="3" [(ngModel)]="model.address.country" #country="ngModel">
+            <div [hidden]="country.valid || country.pristine" class="alert">
+                Podaj państwo (przynajmniej 3 znaki)!
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="city">Miasto</label>
+            <input type="text" id="city" required name="city" minlength="2" [(ngModel)]="model.address.city" #city="ngModel">
+            <div [hidden]="city.valid || city.pristine" class="alert">
+                Podaj miasto (przynajmniej 2 znaki)!
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="postalCode">Kod pocztowy</label>
+            <input type="text" id="postalCode" required name="postalCode" minlength="2" [(ngModel)]="model.address.postalCode" #postalCode="ngModel">
+            <div [hidden]="postalCode.valid || postalCode.pristine" class="alert">
+                Podaj miasto (przynajmniej 2 znaki)!
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="street">Ulica</label>
+            <input type="text" id="street" required name="street" minlength="4" [(ngModel)]="model.address.street" #street="ngModel">
+            <div [hidden]="street.valid || street.pristine" class="alert">
+                Podaj ulicę (przynajmniej 4 znaki)!
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="buildingNumber">Numer budynku</label>
+            <input type="number" id="buildingNumber" required name="buildingNumber" min="1" [(ngModel)]="model.address.buildingNumber" #buildingNumber="ngModel">
+            <div [hidden]="buildingNumber.valid || buildingNumber.pristine" class="alert">
+                Podaj numer budynku!
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="apartmentNumber">Numer mieszkania</label>
+            <input type="number" id="apartmentNumber" name="apartmentNumber" [(ngModel)]="model.address.apartmentNumber">
+        </div>
+        <button type="submit" [disabled]="!addCustomerForm.form.valid" id="add-button">Dodaj</button>
+    </form>
+</div>

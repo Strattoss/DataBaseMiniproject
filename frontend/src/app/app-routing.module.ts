@@ -11,6 +11,7 @@ import { TravelsViewComponent } from './components/travels-view/travels-view.com
 import { TravelsComponent } from './components/travels/travels.component';
 import { CustomersComponent } from './components/customers/customers.component';
 import { CustomerDetailsComponent } from './components/customer-details/customer-details.component';
+import { AddCustomerFormComponent } from './components/add-customer-form/add-customer-form.component';
 
 
 const routes: Routes = [
@@ -20,6 +21,7 @@ const routes: Routes = [
   {path: 'orders', component: HistoryComponent},
   {path: 'cart', component: CartDetailsComponent},
   {path: 'users', component: CustomersComponent},
+  {path: 'users/add', component: AddCustomerFormComponent},
   {path: 'users/:key', component: CustomerDetailsComponent},
   {path: '', component: MainViewComponent},
 ]
