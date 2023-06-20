@@ -7,12 +7,12 @@
             Nazwisko: <strong> {{ customer.lastName }} </strong><br>
             Email: <strong> {{ customer.email }} </strong><br>
             Numer telefonu: <strong> {{ customer.phoneNumber }} </strong><br>
-            Liczba wycieczek: <strong> {{ customer.numberOfReservations }} </strong><br>
+            Liczba rezerwacji: <strong> {{ customer.numberOfReservations }} </strong><br>
             <a [routerLink]="customer._id">
                 <button id="details">Szczegóły</button>
             </a>
             <button (click)="cs.changeCustomer(customer._id)" id="choose">Wybierz</button>
-            <button (click)="cs.deleteCustomer(customer._id)" id="delete">Usuń</button>
+            <button (click)="cs.deleteCustomer(customer._id)" id="delete" [hidden]="customer.numberOfReservations != 0">Usuń</button>
         </div>    
     </div>
     <a routerLink="add">
