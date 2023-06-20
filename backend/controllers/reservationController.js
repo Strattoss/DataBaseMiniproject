@@ -121,7 +121,7 @@ const reservationController = {
     try {
       const reservationToResign = await Trip.findById(req.body.tripId).select('reservations')
       const canBeResigned = reservationToResign.reservations.filter(r => r._id == req.body.reservationId && r.state == 'New').length > 0
-      console.log(canBeResigned);
+    
       if(!canBeResigned) {
         res.status(500).json({ message: `Cannot resign from reservation with id ${req.body.reservationId}` })
         return
