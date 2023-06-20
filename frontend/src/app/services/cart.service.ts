@@ -2,9 +2,11 @@ import { Injectable } from '@angular/core';
 import { DBService } from './db.service';
 import { Reservation } from '../models/reservation';
 import { Trip } from '../models/trip';
-import { TravelService } from './travel.service';
+import { Customer } from '../models/customer';
 import { Observable } from 'rxjs';
 import { Purchase } from '../models/purchase';
+import { Cancelled } from '../models/cancelled';
+import { TravelService } from './travel.service';
 
 @Injectable({
   providedIn: 'root'
@@ -12,18 +14,68 @@ import { Purchase } from '../models/purchase';
 export class CartService {
   reservations : Reservation[] = []
   purchases : Purchase[] = []
-  
+  cancelled: Cancelled[] = []
+  customers: Customer[] = []
+  currentCustomer : Customer
+  startCustomerId = "6447a9ead297195ac0dd240c"
+
+  ts
+
   fullPrice = 0
   fullReservations = 0
 
-  constructor(private dbService: DBService, private ts: TravelService) { 
-    this.dbService.getReservations("6447a9ead297195ac0dd240c").subscribe(res => {
+  constructor(private dbService: DBService, private tService : TravelService ) { 
+    this.ts = tService
+    this.dbService.getCustomers().subscribe(res => this.customers = res)
+    this.dbService.getCustomerByKey(this.startCustomerId).subscribe(res => {
+      this.currentCustomer = res
+      
+      this.dbService.getReservations(this.currentCustomer._id).subscribe(res => {
+        this.reservations = res
+        this.fullReservations = this.reservations.map(r => r.tickets).reduce((a, b) => a + b, 0)      
+        this.fullPrice = this.reservations.map(r => r.tickets * r.price).reduce((a, b) => a + b, 0)
+      })
+      this.dbService.getPurchases(this.currentCustomer._id).subscribe(res => {
+        this.purchases = res
+      })
+      this.dbService.getCancelled(this.currentCustomer._id).subscribe(res => {
+        this.cancelled = res
+      })
+    })
+  }
+
+  refreshCustomer() {    
+    console.log(this.reservations);
+    
+    this.dbService.getReservations(this.currentCustomer._id).subscribe(res => {
       this.reservations = res
       this.fullReservations = this.reservations.map(r => r.tickets).reduce((a, b) => a + b, 0)      
       this.fullPrice = this.reservations.map(r => r.tickets * r.price).reduce((a, b) => a + b, 0)
+      console.log(this.reservations);
     })
-    this.dbService.getPurchases("6447a9ead297195ac0dd240c").subscribe(res => {
+    this.dbService.getPurchases(this.currentCustomer._id).subscribe(res => {
       this.purchases = res
+    })
+    this.dbService.getCancelled(this.currentCustomer._id).subscribe(res => {
+      this.cancelled = res
+    })
+  }
+
+  changeCustomer(id: string) {
+    this.dbService.getCustomerByKey(id).subscribe(res => {
+      this.currentCustomer = res
+      
+      this.dbService.getReservations(this.currentCustomer._id).subscribe(res => {
+        this.reservations = res
+        this.fullReservations = this.reservations.map(r => r.tickets).reduce((a, b) => a + b, 0)      
+        this.fullPrice = this.reservations.map(r => r.tickets * r.price).reduce((a, b) => a + b, 0)
+      })
+      this.dbService.getPurchases(this.currentCustomer._id).subscribe(res => {
+        this.purchases = res
+      })
+      this.dbService.getCancelled(this.currentCustomer._id).subscribe(res => {
+        this.cancelled = res
+      })
     })
   }
 
@@ -42,13 +94,23 @@ export class CartService {
 
   reserve(tripId: string, tickets: number, price: number) {        
     this.dbService.newReservation(tripId, tickets, price, "6447a9ead297195ac0dd240c")
+    this.ts.refreshTravels()
+    this.refreshCustomer()
   }
 
   resign(tripId : string, reservationId: string) { 
     this.dbService.resignReservation(tripId, reservationId)
+    this.ts.refreshTravels()
+    this.refreshCustomer()
   }
 
   buy(tripId : string, reservationId: string) {
     this.dbService.newPurchase(tripId, reservationId)
+    this.ts.refreshTravels()
+    this.refreshCustomer()
+  }
+
+  getCustomerByKey(key: string): Observable<Customer> {
+    return this.dbService.getCustomerByKey(key)
   }
 }

@@ -1,0 +1,33 @@
+main {
+    padding: 20px;
+}
+
+#customers {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 25px;
+}
+
+.customer {
+    margin-right: 50px;
+    padding: 10px;
+    border: 5px solid rgb(188, 206, 248);
+    border-radius: 10px;
+}
+
+button {
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 7px;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#details {
+    background-color: rgb(152, 168, 248);
+}
+
+#choose {
+    background-color: #E8F3D6;
+}

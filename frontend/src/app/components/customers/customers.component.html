@@ -1,0 +1,17 @@
+<main>
+    <h2>Użytkownicy</h2>    
+    <div  id="customers">
+        <div class="customer" *ngFor="let customer of cs.customers, index as i">
+            <strong> {{ customer.username | uppercase }} </strong><br> 
+            Imię: <strong> {{ customer.firstName }} </strong><br>
+            Nazwisko: <strong> {{ customer.lastName }} </strong><br>
+            Email: <strong> {{ customer.email }} </strong><br>
+            Numer telefonu: <strong> {{ customer.phoneNumber }} </strong><br>
+            Liczba wycieczek: <strong> {{ customer.numberOfReservations }} </strong><br>
+            <a [routerLink]="customer._id">
+                <button id="details">Szczegóły</button>
+            </a>
+            <button (click)="cs.changeCustomer(customer._id)" id="choose">Wybierz</button>
+        </div>    
+    </div>
+</main>

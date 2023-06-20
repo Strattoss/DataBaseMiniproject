@@ -3,8 +3,15 @@ const Customer = require("../models/customer");
 const customerController = {
   getAllCustomers: async (req, res) => {
     try {
-      const customers = await Customer.find();
-      res.status(200).json(customers);
+      const customers = await Customer.find().select('email firstName lastName username phoneNumber reservations').lean()
+      const result = customers.map(c => {
+        const { reservations, ...rest } = c
+        return {
+          numberOfReservations: reservations === undefined ? 0 : reservations.length,
+          ...rest
+        }
+      })
+      res.status(200).json(result);
     } catch (error) {
       res.status(500).json({ message: error.message });
     }
@@ -12,11 +19,16 @@ const customerController = {
 
   getCustomerById: async (req, res) => {
     try {
-      const customer = await Customer.findById(req.params.id)
-      if (!customer) {
+      const { reservations, ...rest } = await Customer.findById(req.params.id).lean()
+      const result =  {
+          numberOfReservations: reservations === undefined ? 0 : reservations.length,
+          reservations: reservations === undefined ? [] : reservations,
+          ...rest
+        }
+      if (!result) {
         res.status(404).json({ message: "Customer not found" });
       } else {
-        res.status(200).json(customer);
+        res.status(200).json(result);
       }
     } catch (error) {
       res.status(500).json({ message: error.message });

@@ -27,6 +27,8 @@ import { AngularFireModule } from "@angular/fire/compat";
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { environment } from '../environments/environment';
 import { HistoryComponent } from './components/history/history.component';
+import { CustomersComponent } from './components/customers/customers.component';
+import { CustomerDetailsComponent } from './components/customer-details/customer-details.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,7 @@ import { HistoryComponent } from './components/history/history.component';
     RatingComponent,
     FiltersComponent,
     DestinationFilterComponent, 
-    FilterPipe, PriceFilterComponent, DateFilterComponent, RatingFilterComponent, AddTravelFormComponent, CartComponent, MainViewComponent, CartDetailsComponent, TravelsViewComponent, TravelDetailsComponent, HistoryComponent
+    FilterPipe, PriceFilterComponent, DateFilterComponent, RatingFilterComponent, AddTravelFormComponent, CartComponent, MainViewComponent, CartDetailsComponent, TravelsViewComponent, TravelDetailsComponent, HistoryComponent, CustomersComponent, CustomerDetailsComponent
   ],
   imports: [
     BrowserModule,

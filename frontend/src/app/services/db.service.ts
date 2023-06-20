@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs';
-// import { Purchase } from '../models/u_purchase';
 import { Reservation } from '../models/reservation';
+import { Cancelled } from '../models/cancelled';
 import { Trip } from '../models/trip';
 import { Purchase } from '../models/purchase';
 import { Review } from '../models/review';
+import { Customer } from '../models/customer';
 
 const tripsUrl = 'http://localhost:8080/trips';
 const customersUrl = 'http://localhost:8080/customers';
@@ -27,8 +28,20 @@ export class DBService {
     return this.http.get<Trip>(`${tripsUrl}/${key}`)
   }
 
+  getCustomers(): Observable<Customer[]> {
+    return this.http.get<Customer[]>(customersUrl)
+  }
+
+  getCustomerByKey(key: string): Observable<Customer> {
+    return this.http.get<Customer>(`${customersUrl}/${key}`)
+  }
+
   getReservations(customerId: string): Observable<Reservation[]> {
     return this.http.get<Reservation[]>(`${reservationsUrl}/${customerId}`)
+  }
+
+  getCancelled(customerId: string): Observable<Cancelled[]> {
+    return this.http.get<Cancelled[]>(`${reservationsUrl}/cancelled/${customerId}`)
   }
 
   getPurchases(customerId: string): Observable<Purchase[]> {
