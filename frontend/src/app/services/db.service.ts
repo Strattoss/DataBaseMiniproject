@@ -21,7 +21,9 @@ export class DBService {
   constructor(private http: HttpClient) { }
 
   getTravels(): Observable<Trip[]> {
+    console.log(new Date().getMilliseconds());
     return this.http.get<Trip[]>(tripsUrl)
+    // return this.http.get<Trip[]>(`${tripsUrl}?t=${new Date().getMilliseconds()}`)
   }
 
   getTravelByKey(key: string): Observable<Trip> {

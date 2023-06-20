@@ -24,9 +24,9 @@
     </div>
     
     <div id="reservations">
-        <div id="purchase" *ngIf="cs.purchases.length > 0">
+        <div id="purchase" *ngIf="purchases.length > 0">
             <h3>Zakupione wycieczki</h3>
-            <div *ngFor="let purchase of cs.purchases, index as i" class="detail">
+            <div *ngFor="let purchase of purchases, index as i" class="detail">
                 <strong> {{ purchase.title | uppercase }} </strong><br> 
                 Lokalizacja: <strong> {{ purchase.destination }} </strong><br>
                 Od: <strong> {{ purchase.startDate | date:"dd.MM.yyyy" }} </strong><br>
@@ -38,9 +38,9 @@
                 Zapłacono: <strong>{{ purchase.tickets * purchase.price | currency: 'EUR'}}</strong>
             </div>    
         </div>
-        <div id="reservation" *ngIf="cs.reservations.length > 0">
+        <div id="reservation" *ngIf="reservations.length > 0">
             <h3>Zarezerwowane wycieczki</h3>
-            <div *ngFor="let reservation of cs.reservations index as i" class="detail">
+            <div *ngFor="let reservation of reservations index as i" class="detail">
                 <strong> {{ reservation.title | uppercase }} </strong><br> 
                 Lokalizacja: <strong> {{ reservation.destination }} </strong><br>
                 Od: <strong> {{ reservation.startDate | date:"dd.MM.yyyy" }} </strong><br>
@@ -51,18 +51,18 @@
                 Zapłacono: <strong>{{ reservation.tickets * reservation.price | currency: 'EUR'}}</strong>
             </div>   
         </div>
-        <div id="cancelled" *ngIf="cs.cancelled.length > 0">
+        <div id="cancelled" *ngIf="cancelled.length > 0">
             <h3>Odrzucone wycieczki</h3>
-            <div *ngFor="let cancelled of cs.cancelled, index as i" class="detail">
-                <strong> {{ cancelled.title | uppercase }} </strong><br> 
-                Lokalizacja: <strong> {{ cancelled.destination }} </strong><br>
-                Od: <strong> {{ cancelled.startDate | date:"dd.MM.yyyy" }} </strong><br>
-                Do: <strong> {{ cancelled.endDate | date:"dd.MM.yyyy" }} </strong><br>
-                Data rezerwacji wycieczki: <strong> {{ cancelled.reservationDate | date:"dd.MM.yyyy, h:mm a"}} </strong><br>
-                Data zrezygnowania z wycieczki: <strong> {{ cancelled.cancelationDate | date:"dd.MM.yyyy, h:mm a"}} </strong><br>
-                Status wycieczki: <strong> {{ checkStatus(cancelled) }} </strong><br>
-                Liczba kupionych wycieczek: <strong> {{ cancelled.tickets }} </strong><br>
-                Zapłacono: <strong>{{ cancelled.tickets * cancelled.price | currency: 'EUR'}}</strong>
+            <div *ngFor="let c of cancelled, index as i" class="detail">
+                <strong> {{ c.title | uppercase }} </strong><br> 
+                Lokalizacja: <strong> {{ c.destination }} </strong><br>
+                Od: <strong> {{ c.startDate | date:"dd.MM.yyyy" }} </strong><br>
+                Do: <strong> {{ c.endDate | date:"dd.MM.yyyy" }} </strong><br>
+                Data rezerwacji wycieczki: <strong> {{ c.reservationDate | date:"dd.MM.yyyy, h:mm a"}} </strong><br>
+                Data zrezygnowania z wycieczki: <strong> {{ c.cancelationDate | date:"dd.MM.yyyy, h:mm a"}} </strong><br>
+                Status wycieczki: <strong> {{ checkStatus(c) }} </strong><br>
+                Liczba kupionych wycieczek: <strong> {{ c.tickets }} </strong><br>
+                Zapłacono: <strong>{{ c.tickets * c.price | currency: 'EUR'}}</strong>
             </div>    
         </div>
     </div>

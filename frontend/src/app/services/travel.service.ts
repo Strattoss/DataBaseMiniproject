@@ -34,9 +34,6 @@ export class TravelService {
     this.dbService.getTravels().subscribe(res => {
       this.travels = res
       this.setLocations()
-      this.selectedPrice = this.maxPrice
-      this.minDate = new Date()
-      this.setMaxDate()
     })
   }
 

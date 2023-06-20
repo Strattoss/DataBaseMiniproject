@@ -14,7 +14,6 @@ import { TravelService } from './travel.service';
 export class CartService {
   reservations : Reservation[] = []
   purchases : Purchase[] = []
-  cancelled: Cancelled[] = []
   customers: Customer[] = []
   currentCustomer : Customer
   startCustomerId = "6447a9ead297195ac0dd240c"
@@ -42,10 +41,11 @@ export class CartService {
       this.dbService.getPurchases(this.currentCustomer._id).subscribe(res => {
         this.purchases = res
       })
-      this.dbService.getCancelled(this.currentCustomer._id).subscribe(res => {
-        this.cancelled = res
-      })
     })
+  }
+
+  getReservationsById(id: string) {
+    return this.dbService.getReservations(id).subscribe()
   }
 
   refreshCustomers() {    
@@ -61,9 +61,6 @@ export class CartService {
     this.dbService.getPurchases(this.currentCustomer._id).subscribe(res => {
       this.purchases = res
     })
-    this.dbService.getCancelled(this.currentCustomer._id).subscribe(res => {
-      this.cancelled = res
-    })    
   }
 
   changeCustomer(id: string) {
@@ -77,9 +74,6 @@ export class CartService {
       })
       this.dbService.getPurchases(this.currentCustomer._id).subscribe(res => {
         this.purchases = res
-      })
-      this.dbService.getCancelled(this.currentCustomer._id).subscribe(res => {
-        this.cancelled = res
       })
     })
     localStorage.setItem('lastLogged', id)
@@ -99,7 +93,7 @@ export class CartService {
 
   reserve(tripId: string, tickets: number, price: number) {        
     this.dbService.newReservation(tripId, tickets, price, this.currentCustomer._id)
-    this.ts.refreshTravels()
+    setInterval(this.ts.refreshTravels, 100)
     this.refreshCustomer()
   }
 
